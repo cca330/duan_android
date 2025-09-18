@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Quenmatkhaunhaplaimatkhau">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/corlor_backgroup"
+        android:clickable="false"
+        android:focusable="false"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="159dp"
+        tools:layout_editor_absoluteY="40dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="128dp"
+            android:layout_marginEnd="32dp"
+            android:clickable="false"
+            android:enabled="false"
+            android:focusable="false"
+            android:text="Vui lòng nhập lại mật khẩu của bạn,lưu ý mật khẩu phải đủ mạnh bao gồm chữ hoa,chữ thường,số ,kí tự đặc biệt"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="40dp"
+            app:boxBackgroundMode="none"
+            >
+
+            <EditText
+                android:id="@+id/edt_quenmatkhaunhaplaimatkhau111"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/btn_gropback"
+                android:hint="Mật khẩu"
+                android:inputType="textPassword"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textStyle="bold"
+                android:paddingEnd="30dp"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        <ImageButton
+            android:id="@+id/img_quenmatkhaunhaplaimatkhau111showpass"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="310dp"
+            android:layout_marginTop="-55dp"
+            android:layout_marginEnd="0dp"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/baseline_remove_red_eye_24" />
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="40dp"
+            app:boxBackgroundMode="none"
+            >
+
+            <EditText
+                android:id="@+id/edt_quenmatkhaunhaplaimatkhau222"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/btn_gropback"
+                android:hint="Nhập lại mật khẩu"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textStyle="bold"
+                android:paddingEnd="30dp"
+                android:inputType="textPassword"/>
+
+
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+        <ImageButton
+            android:id="@+id/img_quenmatkhaunhaplaimatkhau222showpass"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="310dp"
+            android:layout_marginTop="-55dp"
+            android:layout_marginEnd="0dp"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/baseline_remove_red_eye_24" />
+
+
+        <Button
+            android:id="@+id/btn_quenmatkhaunhaplaimatkhauxacnhan"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="100dp"
+            android:background="@drawable/btn_gropback"
+            android:enabled="true"
+            android:text="Xác nhận"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+
+
+
+        <TextView
+            android:id="@+id/quyenmatkhaunhaplaimatkhauquaylai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quay lại trang đăng nhập!"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Duanlonmain">
+        <activity
+            android:name=".vocabulary.chude.Nhatruong"
+            android:exported="false" />
+        <activity
+            android:name=".vocabulary.chude.Giadinh"
+            android:exported="false" />
+        <activity
+            android:name=".vocabulary.chude.Traicay"
+            android:exported="false" />
+        <activity
+            android:name=".vocabulary.chude.Mau_sac"
+            android:exported="false" />
+        <activity
+            android:name=".vocabulary.chude.Them_chude"
+            android:exported="false" />
+        <activity
+            android:name=".vocabulary.tuvug_toeic.Product_development"
+            android:exported="false" />
+        <activity
+            android:name=".vocabulary.tuvug_toeic.Shopping"
+            android:exported="false" />
+        <activity
+            android:name=".vocabulary.tuvug_toeic.Job_ads"
+            android:exported="false" />
+        <activity
+            android:name=".vocabulary.tuvug_toeic.Correspondence"
+            android:exported="false" />
+        <activity
+            android:name=".vocabulary.tuvug_toeic.Electronics"
+            android:exported="false" />
+        <activity
+            android:name=".vocabulary.tuvug_toeic.Office_procedures"
+            android:exported="false" />
+        <activity
+            android:name=".vocabulary.tuvug_toeic.Office_technology"
+            android:exported="false" />
+        <activity
+            android:name=".vocabulary.tuvug_toeic.Computers"
+            android:exported="false" />
+        <activity
+            android:name=".vocabulary.tuvug_toeic.Them_tuvung_toeic"
+            android:exported="false" />
+        <activity
+            android:name=".vocabulary.tuvug_toeic.Marketing"
+            android:exported="false" />
+        <activity
+            android:name=".vocabulary.tuvug_toeic.Conferences"
+            android:exported="false" />
+        <activity
+            android:name=".vocabulary.tuvug_toeic.Business"
+            android:exported="false" />
+        <activity
+            android:name=".vocabulary.tuvug_toeic.Warranties"
+            android:exported="false" />
+        <activity
+            android:name=".vocabulary.tuvug_toeic.Contract"
+            android:exported="false" />
+        <activity
+            android:name=".vocabulary.Vocabulary"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chat_bot.ChatwithAI"
+            android:exported="true" />
+        <activity
+            android:name=".Speaking_AI_111"
+            android:exported="false" />
+        <activity
+            android:name=".Trangchu"
+            android:exported="false" />
+        <activity
+            android:name=".intro.Intro_four444"
+            android:exported="false" />
+        <activity
+            android:name=".intro.Intro_three333"
+            android:exported="false" />
+        <activity
+            android:name=".intro.Intro_two222"
+            android:exported="false" />
+        <activity
+            android:name=".intro.Intro_one111"
+            android:exported="false" />
+        <activity
+            android:name=".Intro"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Quenmatkhaunhaplaimatkhau"
+            android:exported="true" />
+        <activity
+            android:name=".Quenmatkhau"
+            android:exported="true" />
+        <activity
+            android:name=".Dangky"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

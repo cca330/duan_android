@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vocabulary.tuvug_toeic.Contract"
+    android:background="@drawable/maunenblack">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/angle_left_regular_full"
+            android:layout_marginTop="20dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Computers and the Internet"
+            android:textColor="@color/purpl3"
+            android:textSize="26dp"/>
+
+
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:id="@+id/recycler_vocabulary"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="75dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="6dp"
+                android:text="Access (Noun,Verb) : (n)lối vào, đường vào, quyền truy cập; (v)truy cập"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:background="@drawable/test_vien"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/white"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="Allocate (Verb) : cấp cho, phân phối, phân phát, chia phần, chỉ định, định rõ vị trí"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien"
+                android:layout_marginTop="15dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/white"/>
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:text="Compatible (Adj) : tương thích, thích hợp"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien"
+                android:layout_marginTop="15dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/white"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="6dp"
+                android:text="Delete (verb) : xóa, xoá bỏ"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:background="@drawable/test_vien"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/white"/>
+
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="Display (Noun,Verb) : (v)hiển thị, biểu lộ, trình bày, trưng bày; (n)sự trưng bày"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien"
+                android:layout_marginTop="15dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/white"/>
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:text="Duplicate (Verb) : gấp đôi ,nhân đôi"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien"
+                android:layout_marginTop="15dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/white"/>
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:text="Failure (Noun) :hỏng, thiếu ,yếu ,trượt, thất bại"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien"
+                android:layout_marginTop="15dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/white"/>
+
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="Figure out (Verb) : tìm hiểu, đoán ra, tính toán ra, giải ra"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien"
+                android:layout_marginTop="15dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/white"/>
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:text="Ignore (Verb) : bỏ qua, phớt lờ, không để ý tới"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien"
+                android:layout_marginTop="15dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/white"/>
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="Search (Noun,Verb) : (n)tikmf kiếm,tìm hiểu, điều tra, thăm dò; (v)tìm"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien"
+                android:layout_marginTop="15dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/white"/>
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="Shut down (Verb) : đóng lại, ngừng lại, tắt máy, ngừng hoạt động, chấm dứt"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien"
+                android:layout_marginTop="15dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/white"/>
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:text="Warning (Noun) : cảnh báo"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien"
+                android:layout_marginTop="15dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/white"/>
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

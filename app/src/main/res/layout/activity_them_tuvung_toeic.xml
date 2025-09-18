@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vocabulary.tuvug_toeic.Them_tuvung_toeic"
+    android:background="@drawable/maunenblack">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/angle_left_regular_full"
+            android:layout_marginTop="20dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Từ vựng TOEIC"
+            android:textColor="@color/purpl3"
+            android:textSize="26dp"/>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+    <ScrollView
+        android:id="@+id/recycler_vocabulary"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="15dp">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="50dp"
+                android:text="Contract"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:background="@drawable/duongvien"
+                android:padding="25dp"
+                android:id="@+id/vocabulary_contract"
+                android:layout_marginStart="5dp"
+                />
+
+
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="50dp"
+                android:text="Marketing"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:background="@drawable/duongvien"
+                android:padding="25dp"
+                android:id="@+id/recycler_vocabulary_marketing"
+                android:layout_marginStart="215dp"
+                android:layout_marginTop="-75dp"
+                />
+
+
+
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="50dp"
+                android:text="Warranties"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:background="@drawable/duongvien"
+                android:padding="25dp"
+                android:id="@+id/recycler_vocabulary_warranties"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="25dp"
+                />
+
+
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="50dp"
+                android:text="Business Plan"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="17dp"
+                android:background="@drawable/duongvien"
+                android:textColor="@color/black"
+                android:padding="25dp"
+                android:id="@+id/recycler_vocabulary_business_plan"
+                android:layout_marginStart="215dp"
+                android:layout_marginTop="-75dp"
+                />
+
+
+
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="50dp"
+                android:text="Conferences"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:background="@drawable/duongvien"
+                android:textColor="@color/black"
+                android:padding="25dp"
+                android:id="@+id/recycler_vocabulary_conferences"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="25dp"
+                />
+
+
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="50dp"
+                android:text="Computers and the Internet"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="17dp"
+                android:background="@drawable/duongvien"
+                android:textColor="@color/black"
+                android:padding="15dp"
+                android:id="@+id/recycler_vocabulary_com"
+                android:layout_marginStart="215dp"
+                android:layout_marginTop="-75dp"
+                />
+
+
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="50dp"
+                android:text="Office Technology"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:background="@drawable/duongvien"
+                android:textColor="@color/black"
+                android:padding="15dp"
+                android:id="@+id/recycler_vocabulary_office_technology"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="25dp"
+                />
+
+
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="50dp"
+                android:text="Office Procedures"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:background="@drawable/duongvien"
+                android:textColor="@color/black"
+                android:padding="15dp"
+                android:id="@+id/recycler_vocabulary_office_procedures"
+                android:layout_marginStart="215dp"
+                android:layout_marginTop="-75dp"
+                />
+
+
+
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="50dp"
+                android:text="Electronics"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:background="@drawable/duongvien"
+                android:textColor="@color/black"
+                android:padding="25dp"
+                android:id="@+id/recycler_vocabulary_electronics"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="25dp"
+                />
+
+
+
+
+
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="50dp"
+                android:text="Correspondence"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="17dp"
+                android:background="@drawable/duongvien"
+                android:textColor="@color/black"
+                android:padding="19dp"
+                android:id="@+id/recycler_vocabulary_correspondece"
+                android:layout_marginStart="215dp"
+                android:layout_marginTop="-75dp"
+                />
+
+
+
+
+
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="50dp"
+                android:text="Job Ads "
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:background="@drawable/duongvien"
+                android:textColor="@color/black"
+                android:padding="25dp"
+                android:id="@+id/recycler_vocabulary_job_ads"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="25dp"
+                />
+
+
+
+
+
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="50dp"
+                android:text="Shopping"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:background="@drawable/duongvien"
+                android:textColor="@color/black"
+                android:padding="25dp"
+                android:id="@+id/recycler_vocabulary_shopping"
+                android:layout_marginStart="215dp"
+                android:layout_marginTop="-75dp"
+                />
+
+
+
+
+
+
+
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="50dp"
+                android:text="Product Development"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:background="@drawable/duongvien"
+                android:textColor="@color/black"
+                android:padding="25dp"
+                android:id="@+id/recycler_vocabulary_product"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="25dp"
+                />
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

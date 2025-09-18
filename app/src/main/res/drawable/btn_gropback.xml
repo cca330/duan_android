@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Trạng thái khi bấm -->
+    <item android:state_pressed="true">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="50dp"/>
+                    <gradient
+                        android:angle="0"
+                        android:startColor="#7B1FA2"
+                        android:endColor="#26C6DA"
+                        android:type="linear"/>
+                    <size android:width="24dp"
+                        android:height="24dp"/>
+                </shape>
+            </item>
+            <item android:top="4dp" android:bottom="4dp" android:left="4dp" android:right="4dp">
+                <shape android:shape="rectangle">
+                    <corners android:radius="50dp"/>
+                    <solid android:color="#111112"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+    <!-- Trạng thái bình thường -->
+    <item>
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="50dp"/>
+                    <gradient
+                        android:angle="0"
+                        android:startColor="#9C27B0"
+                        android:endColor="#80DEEA"
+                        android:type="linear"/>
+                    <size android:width="24dp"
+                        android:height="24dp"/>
+                </shape>
+            </item>
+            <item android:top="4dp" android:bottom="4dp" android:left="4dp" android:right="4dp">
+                <shape android:shape="rectangle">
+                    <corners android:radius="50dp"/>
+                    <solid android:color="#F119191B"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+</selector>

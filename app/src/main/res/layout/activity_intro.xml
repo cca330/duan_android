@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Intro"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layoutone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+
+        <androidx.viewpager.widget.ViewPager
+
+            android:layout_width="match_parent"
+            android:layout_height="330dp"
+            android:id="@+id/viewpager"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:clipToPadding="false"
+            android:paddingRight="28dp"
+            android:paddingLeft="28dp"
+            android:background="@color/white"/>
+
+
+        <me.relex.circleindicator.CircleIndicator
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom"
+            android:paddingBottom="15dp"
+            app:ci_drawable="@drawable/daucham"
+            app:ci_drawable_unselected="@drawable/daucham2"
+            app:ci_height="5dp"
+            app:ci_width="5dp"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutone"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Learn English Smarter"
+            android:textColor="@color/blue"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="70dp"
+            android:letterSpacing="0.0265"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:textAlignment="center"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:text="Boost your English skills with AI-powered lessons"
+            android:textColor="@color/black"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:letterSpacing="0.0265"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Personalized Learning"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/blue"
+            android:textSize="25dp"
+            android:letterSpacing="0.0265"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="70dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:text="AI adapts to your level and helps you improve faster"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:letterSpacing="0.0265"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="50dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Practice Anytime, Anywhere"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/blue"
+            android:textSize="25dp"
+            android:letterSpacing="0.0265"
+            android:layout_marginStart="43dp"
+            android:layout_marginEnd="35dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:text="Interactive exercises, instant feedback, and daily progress tracking"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:letterSpacing="0.0265"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="50dp"/>
+
+
+       <TextView
+           android:id="@+id/txt_introgetstarted"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="GET STARTED"
+           android:textStyle="bold"
+           android:textAlignment="center"
+           android:textColor="@color/red"
+           android:textSize="15dp"
+           android:letterSpacing="0.0265"
+           android:layout_marginStart="70dp"
+           android:layout_marginEnd="70dp"
+           android:layout_marginTop="70dp"/>
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

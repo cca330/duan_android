@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vocabulary.tuvug_toeic.Contract"
+    android:background="@drawable/maunenblack">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/angle_left_regular_full"
+            android:layout_marginTop="20dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Chủ đề nhà trường"
+            android:textColor="@color/purpl3"
+            android:textSize="26dp" />
+
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:id="@+id/recycler_vocabulary"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="75dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="6dp"
+                android:text="Principal (Noun) : hiệu trưởng"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:background="@drawable/test_vien"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/white"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:text="Director (Noun) : viên trưởng, viên chỉ huy"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien"
+                android:layout_marginTop="15dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/white"/>
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Professor (Noun) : giáo sư"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien"
+                android:layout_marginTop="15dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/white"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="6dp"
+                android:text="Reader (Noun) : người đọc, độc giả"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:background="@drawable/test_vien"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/white"/>
+
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:text="Teacher (Noun) : giáo viên"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien"
+                android:layout_marginTop="15dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/white"/>
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="Lecturer (Noun) : người thuyết trình, trợ lý giảng dạy đại học"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien"
+                android:layout_marginTop="15dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/white"/>
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:text="Pupil (Noun) : học sinh"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien"
+                android:layout_marginTop="15dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/white"/>
+
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Boarder (Noun) : học sinh nội trú"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien"
+                android:layout_marginTop="15dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/white"/>
+
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Student (Noun) : sinh viên"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien"
+                android:layout_marginTop="15dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/white"/>
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Schoolboy (Noun) : nam sinh"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien"
+                android:layout_marginTop="15dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/white"/>
+
+
+
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Thesis (Noun) : khóa luận"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien"
+                android:layout_marginTop="15dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/white"/>
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

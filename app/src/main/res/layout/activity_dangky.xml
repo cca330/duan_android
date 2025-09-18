@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dangky">
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/corlor_backgroup"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="46dp"
+        android:clickable="false"
+        android:focusable="false">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:clickable="false"
+            android:focusable="false">
+
+
+            <TextView
+                android:id="@+id/txt_dangkiview"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="128dp"
+                android:layout_marginEnd="32dp"
+                android:text="Đăng kí tài khoản"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="38sp"
+                android:textStyle="bold"
+                android:clickable="false"
+                android:enabled="false"
+                android:focusable="false"/>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginEnd="40dp"
+                app:boxBackgroundMode="none"
+                >
+
+
+                <EditText
+                    android:id="@+id/edt_dangkinhapusername"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@drawable/btn_gropback"
+                    android:hint="Nhập use name"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textStyle="bold"
+
+                    />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="40dp"
+                app:boxBackgroundMode="none"
+                >
+
+                <EditText
+                    android:id="@+id/edt_dangkinhappassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@drawable/btn_gropback"
+                    android:hint="Nhập password"
+                    android:inputType="textPassword"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textStyle="bold"
+                    tools:inputType="textPassword"
+                    android:paddingEnd="30dp"/>
+
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <ImageButton
+                android:id="@+id/img_dangkishowpass"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                app:srcCompat="@drawable/baseline_remove_red_eye_24"
+                android:layout_marginStart="313dp"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="-55dp" />
+
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="40dp"
+                app:boxBackgroundMode="none"
+                >
+
+
+                <EditText
+                    android:id="@+id/edt_dangkinhaplaipassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@drawable/btn_gropback"
+                    android:hint="Nhập lại password"
+                    android:inputType="textPassword"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textStyle="bold"
+                    tools:inputType="textPassword"
+                    android:paddingEnd="30dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+            <ImageButton
+                android:id="@+id/img_dangkishowrepass"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                app:srcCompat="@drawable/baseline_remove_red_eye_24"
+                android:layout_marginStart="313dp"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="-55dp" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="40dp"
+                app:boxBackgroundMode="none"
+                >
+
+                <EditText
+                    android:id="@+id/edt_dangkysdt"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@drawable/btn_gropback"
+                    android:inputType="number"
+                    android:hint="Số điện thoại"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textColorHint="@color/white"
+                    />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Lưu ý: mỗi tài khoản chỉ được liên kết với 1 sdt"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:clickable="false"
+                android:enabled="false"
+                android:focusable="false"/>
+
+
+            <Button
+                android:id="@+id/btn_dangkitaotaikhoan"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="100dp"
+                android:text="Tạo tài khoản"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:enabled="true"
+                android:clickable="true"
+
+
+                />
+
+
+
+
+            <TextView
+                android:id="@+id/txt_dangkyquaylai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quay lại trang đăng nhập!"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"/>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
