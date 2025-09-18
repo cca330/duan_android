@@ -168,7 +168,7 @@ public class ChatwithAI extends AppCompatActivity {
                 case 11: // Chọn ảnh
                     Uri selectedImageUri = data.getData();
                     Toast.makeText(this, "Đã chọn ảnh: " + selectedImageUri, Toast.LENGTH_SHORT).show();
-                    // TODO: bạn có thể gửi ảnh vào RecyclerView như tin nhắn
+                    // bạn có thể gửi ảnh vào RecyclerView như tin nhắn
                     break;
 
                 case 22: // Nhập giọng nói
