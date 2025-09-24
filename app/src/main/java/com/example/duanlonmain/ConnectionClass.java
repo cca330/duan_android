@@ -15,7 +15,7 @@ public class ConnectionClass {
     protected static final String pass = "123456";
 
     // Phương thức nên trả về java.sql.Connection
-    public static  Connection CONN() { // Đổi kiểu trả về
+    public static  Connection CONN() {
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
         java.sql.Connection conn = null;

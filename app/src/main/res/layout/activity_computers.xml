@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".vocabulary.tuvug_toeic.Contract"
-    android:background="@drawable/maunenblack">
+    >
 
 
 
@@ -17,6 +17,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/grey"
         >
 
         <ImageButton
@@ -33,7 +34,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:text="Computers and the Internet"
-            android:textColor="@color/purpl3"
+            android:textColor="@color/white"
+            android:textStyle="bold"
             android:textSize="26dp"/>
 
 
@@ -65,20 +67,24 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
-                android:paddingLeft="10dp"
-                android:paddingTop="6dp"
                 android:text="Access (Noun,Verb) : (n)lối vào, đường vào, quyền truy cập; (v)truy cập"
-                android:textColor="@color/white"
+                android:paddingTop="6dp"
                 android:textSize="18dp"
+                android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@drawable/test_vien"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
                 />
+
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
+                android:textColor="@color/blue4"/>
 
 
 
@@ -88,11 +94,13 @@
                 android:text="Allocate (Verb) : cấp cho, phân phối, phân phát, chia phần, chỉ định, định rõ vị trí"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:paddingLeft="10dp"
-                android:background="@drawable/test_vien"
+                android:background="@drawable/test_vien2"
                 android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
                 />
 
 
@@ -100,8 +108,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
-
+                android:textColor="@color/blue4"/>
 
 
 
@@ -111,36 +118,44 @@
                 android:text="Compatible (Adj) : tương thích, thích hợp"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:paddingLeft="10dp"
-                android:background="@drawable/test_vien"
+                android:background="@drawable/test_vien2"
                 android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
                 />
+
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
+                android:textColor="@color/blue4"/>
 
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="36dp"
-                android:paddingLeft="10dp"
-                android:paddingTop="6dp"
                 android:text="Delete (verb) : xóa, xoá bỏ"
-                android:textColor="@color/white"
+                android:paddingTop="6dp"
                 android:textSize="18dp"
+                android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@drawable/test_vien"
-                android:layout_marginTop="15dp"/>
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                />
+
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
+                android:textColor="@color/blue4"/>
 
 
 
@@ -153,17 +168,21 @@
                 android:text="Display (Noun,Verb) : (v)hiển thị, biểu lộ, trình bày, trưng bày; (n)sự trưng bày"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:paddingLeft="10dp"
-                android:background="@drawable/test_vien"
+                android:background="@drawable/test_vien2"
                 android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
                 />
+
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
+                android:textColor="@color/blue4"/>
 
 
 
@@ -175,17 +194,21 @@
                 android:text="Duplicate (Verb) : gấp đôi ,nhân đôi"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:paddingLeft="10dp"
-                android:background="@drawable/test_vien"
+                android:background="@drawable/test_vien2"
                 android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
                 />
+
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
+                android:textColor="@color/blue4"/>
 
 
 
@@ -197,17 +220,21 @@
                 android:text="Failure (Noun) :hỏng, thiếu ,yếu ,trượt, thất bại"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:paddingLeft="10dp"
-                android:background="@drawable/test_vien"
+                android:background="@drawable/test_vien2"
                 android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
                 />
+
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
+                android:textColor="@color/blue4"/>
 
 
 
@@ -220,17 +247,21 @@
                 android:text="Figure out (Verb) : tìm hiểu, đoán ra, tính toán ra, giải ra"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:paddingLeft="10dp"
-                android:background="@drawable/test_vien"
+                android:background="@drawable/test_vien2"
                 android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
                 />
+
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
+                android:textColor="@color/blue4"/>
 
 
 
@@ -242,17 +273,21 @@
                 android:text="Ignore (Verb) : bỏ qua, phớt lờ, không để ý tới"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:paddingLeft="10dp"
-                android:background="@drawable/test_vien"
+                android:background="@drawable/test_vien2"
                 android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
                 />
+
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
+                android:textColor="@color/blue4"/>
 
 
 
@@ -263,17 +298,21 @@
                 android:text="Search (Noun,Verb) : (n)tikmf kiếm,tìm hiểu, điều tra, thăm dò; (v)tìm"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:paddingLeft="10dp"
-                android:background="@drawable/test_vien"
+                android:background="@drawable/test_vien2"
                 android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
                 />
+
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
+                android:textColor="@color/blue4"/>
 
 
 
@@ -285,17 +324,21 @@
                 android:text="Shut down (Verb) : đóng lại, ngừng lại, tắt máy, ngừng hoạt động, chấm dứt"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:paddingLeft="10dp"
-                android:background="@drawable/test_vien"
+                android:background="@drawable/test_vien2"
                 android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
                 />
+
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
+                android:textColor="@color/blue4"/>
 
 
 
@@ -306,17 +349,21 @@
                 android:text="Warning (Noun) : cảnh báo"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:paddingLeft="10dp"
-                android:background="@drawable/test_vien"
+                android:background="@drawable/test_vien2"
                 android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
                 />
+
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
+                android:textColor="@color/blue4"/>
 
 
 

@@ -13,13 +13,13 @@ public class MessageEntity {
     private String text;
     private boolean isUser;
 
-    // ✅ Constructor
+
     public MessageEntity(String text, boolean isUser) {
         this.text = text;
         this.isUser = isUser;
     }
 
-    // ✅ Getter & Setter
+    //  Getter & Setter
     public int getId() {
         return id;
     }

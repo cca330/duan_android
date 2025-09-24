@@ -5,8 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".vocabulary.tuvug_toeic.Contract"
->
+    tools:context=".vocabulary.tuvug_toeic.Contract">
 
 
 
@@ -33,11 +32,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Conferences"
+            android:text="Chủ đề cảm xúc"
             android:textColor="@color/white"
             android:textStyle="bold"
-            android:textSize="26dp"/>
-
+            android:textSize="26dp" />
 
 
     </LinearLayout>
@@ -66,8 +64,8 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="55dp"
-                android:text="Accommodate (Verb) : điều tiết, điều chỉnh, thu xếp, làm cho phù hợp"
+                android:layout_height="36dp"
+                android:text="Amused (Adj) : vui vẻ, hấp dẫn"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
                 android:textColor="@color/black"
@@ -90,8 +88,8 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="56dp"
-                android:text="Arrangement (Noun) : sự thu xếp, dàn xếp,sắp đặt"
+                android:layout_height="36dp"
+                android:text="Angry (Adj) : giận dữ, tức giận"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
                 android:textColor="@color/black"
@@ -115,8 +113,8 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="55dp"
-                android:text="Association (Noun) : hội, hội liên hiệp, đoàn thể, liên kết"
+                android:layout_height="35dp"
+                android:text="Anxious (Adj) :  lo lắng, áy náy"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
                 android:textColor="@color/black"
@@ -138,8 +136,8 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="55dp"
-            android:text="Attend (Verb) : tham dự, có mặt, chăm sóc, phục vụ, đi theo, đi kèm, hộ tống"
+                android:layout_height="35dp"
+                android:text="Annoyed (Adj) : bực mình"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
                 android:textColor="@color/black"
@@ -165,8 +163,34 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="55dp"
-                android:text="Hold (Verb) : cầm, nắm,giữ, chứa đựng, tổ chức, tiến hành"
+                android:layout_height="36dp"
+                android:text="Apprehensive (Adj) : sợ hãi, e sợ, lo lắng"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/blue4"/>
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Arrogaint (Adj) : ngạo nghễ, ngạo mạn"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
                 android:textColor="@color/black"
@@ -192,33 +216,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="36dp"
-                android:text="Location (Noun) : vị trí, khu đất , hiện trường"
-                android:paddingTop="6dp"
-                android:textSize="18dp"
-                android:textColor="@color/black"
-                android:textStyle="bold"
-                android:paddingLeft="10dp"
-                android:background="@drawable/test_vien2"
-                android:layout_marginTop="15dp"
-                android:layout_marginStart="7dp"
-                android:layout_marginEnd="7dp"
-                />
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="15dp"
-                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/blue4"/>
-
-
-
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="36dp"
-                android:text="Overcrowded (Adj) : chật ních, đông nghịt"
+                android:text="Ashamed (Adj) : xấu hổ, hổ thẹn, ngượng"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
                 android:textColor="@color/black"
@@ -245,7 +243,34 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
-                android:text="Register (Noun,Verb) : (n)danh sách,sổ, sổ sách;(v)đăng ký"
+                android:text="Bewilder (Adj) : làm bối rối, làm lúng túng, làm ngơ ngác"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/blue4"/>
+
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Bored (Adj) : chán nản"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
                 android:textColor="@color/black"
@@ -270,8 +295,8 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="36dp"
-                android:text="Select (verb) : chọn lựa, chọn lọc , tuyển chọn"
+                android:layout_height="35dp"
+                android:text="Confident (Adj) : tin tưởng, tự tin"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
                 android:textColor="@color/black"
@@ -293,10 +318,190 @@
 
 
 
+
+
+
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="36dp"
-                android:text="Sesion (Noun) : phiên, kì ,buổi(họp)"
+                android:layout_height="35dp"
+                android:text="Confused (Adj) : chán nản, buồn phiền"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/blue4"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Cross (Adj) : giận dữ"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/blue4"/>
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Delighted (Adj) : tỏ ra vui thích"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/blue4"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Éctatic (Adj) : mê lì"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/blue4"/>
+
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Enthusiastic (Adj) : đầy nhiệt tình"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/blue4"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Frustrated (Adj) : thất vọng, không hài lòng"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/blue4"/>
+
+
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Furipus (Adj) : giận dữ, điên tiết"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/blue4"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Embarrassed vlunsg túng, bối rối, ngượng"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
                 android:textColor="@color/black"

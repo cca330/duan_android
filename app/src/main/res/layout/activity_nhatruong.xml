@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".vocabulary.tuvug_toeic.Contract"
-    android:background="@drawable/maunenblack">
+>
 
 
 
@@ -17,6 +17,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/grey"
         >
 
         <ImageButton
@@ -33,7 +34,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:text="Chủ đề nhà trường"
-            android:textColor="@color/purpl3"
+            android:textColor="@color/white"
+            android:textStyle="bold"
             android:textSize="26dp" />
 
 
@@ -64,20 +66,24 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="36dp"
-                android:paddingLeft="10dp"
-                android:paddingTop="6dp"
                 android:text="Principal (Noun) : hiệu trưởng"
-                android:textColor="@color/white"
+                android:paddingTop="6dp"
                 android:textSize="18dp"
+                android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@drawable/test_vien"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
                 />
+
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
+                android:textColor="@color/blue4"/>
 
 
 
@@ -87,11 +93,13 @@
                 android:text="Director (Noun) : viên trưởng, viên chỉ huy"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:paddingLeft="10dp"
-                android:background="@drawable/test_vien"
+                android:background="@drawable/test_vien2"
                 android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
                 />
 
 
@@ -99,7 +107,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
+                android:textColor="@color/blue4"/>
 
 
 
@@ -110,36 +118,44 @@
                 android:text="Professor (Noun) : giáo sư"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:paddingLeft="10dp"
-                android:background="@drawable/test_vien"
+                android:background="@drawable/test_vien2"
                 android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
                 />
+
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
+                android:textColor="@color/blue4"/>
 
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
-                android:paddingLeft="10dp"
-                android:paddingTop="6dp"
                 android:text="Reader (Noun) : người đọc, độc giả"
-                android:textColor="@color/white"
+                android:paddingTop="6dp"
                 android:textSize="18dp"
+                android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@drawable/test_vien"
-                android:layout_marginTop="15dp"/>
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                />
+
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
+                android:textColor="@color/blue4"/>
 
 
 
@@ -152,17 +168,21 @@
                 android:text="Teacher (Noun) : giáo viên"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:paddingLeft="10dp"
-                android:background="@drawable/test_vien"
+                android:background="@drawable/test_vien2"
                 android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
                 />
+
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
+                android:textColor="@color/blue4"/>
 
 
 
@@ -174,17 +194,21 @@
                 android:text="Lecturer (Noun) : người thuyết trình, trợ lý giảng dạy đại học"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:paddingLeft="10dp"
-                android:background="@drawable/test_vien"
+                android:background="@drawable/test_vien2"
                 android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
                 />
+
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
+                android:textColor="@color/blue4"/>
 
 
 
@@ -196,17 +220,21 @@
                 android:text="Pupil (Noun) : học sinh"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:paddingLeft="10dp"
-                android:background="@drawable/test_vien"
+                android:background="@drawable/test_vien2"
                 android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
                 />
+
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
+                android:textColor="@color/blue4"/>
 
 
 
@@ -219,17 +247,21 @@
                 android:text="Boarder (Noun) : học sinh nội trú"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:paddingLeft="10dp"
-                android:background="@drawable/test_vien"
+                android:background="@drawable/test_vien2"
                 android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
                 />
+
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
+                android:textColor="@color/blue4"/>
 
 
 
@@ -242,17 +274,21 @@
                 android:text="Student (Noun) : sinh viên"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:paddingLeft="10dp"
-                android:background="@drawable/test_vien"
+                android:background="@drawable/test_vien2"
                 android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
                 />
+
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
+                android:textColor="@color/blue4"/>
 
 
 
@@ -264,17 +300,21 @@
                 android:text="Schoolboy (Noun) : nam sinh"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:paddingLeft="10dp"
-                android:background="@drawable/test_vien"
+                android:background="@drawable/test_vien2"
                 android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
                 />
+
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
+                android:textColor="@color/blue4"/>
 
 
 
@@ -289,17 +329,21 @@
                 android:text="Thesis (Noun) : khóa luận"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:paddingLeft="10dp"
-                android:background="@drawable/test_vien"
+                android:background="@drawable/test_vien2"
                 android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
                 />
+
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
+                android:textColor="@color/blue4"/>
 
 
 

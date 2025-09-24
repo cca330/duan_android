@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".vocabulary.tuvug_toeic.Contract"
->
+  >
 
 
 
@@ -33,11 +33,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Conferences"
+            android:text="Chủ đề giáng sinh"
             android:textColor="@color/white"
             android:textStyle="bold"
-            android:textSize="26dp"/>
-
+            android:textSize="26dp" />
 
 
     </LinearLayout>
@@ -66,8 +65,8 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="55dp"
-                android:text="Accommodate (Verb) : điều tiết, điều chỉnh, thu xếp, làm cho phù hợp"
+                android:layout_height="36dp"
+                android:text="Winter (Noun) : mùa đông"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
                 android:textColor="@color/black"
@@ -90,8 +89,55 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="56dp"
-                android:text="Arrangement (Noun) : sự thu xếp, dàn xếp,sắp đặt"
+                android:layout_height="36dp"
+                android:text="Christmas (Noun) : giáng sinh"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/blue4"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Bell (Noun) : cái chuông"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/blue4"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Carol (Noun) : bài hát mừng giáng sinh"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
                 android:textColor="@color/black"
@@ -113,33 +159,12 @@
 
 
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="55dp"
-                android:text="Association (Noun) : hội, hội liên hiệp, đoàn thể, liên kết"
-                android:paddingTop="6dp"
-                android:textSize="18dp"
-                android:textColor="@color/black"
-                android:textStyle="bold"
-                android:paddingLeft="10dp"
-                android:background="@drawable/test_vien2"
-                android:layout_marginTop="15dp"
-                android:layout_marginStart="7dp"
-                android:layout_marginEnd="7dp"
-                />
 
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="15dp"
-                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/blue4"/>
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="55dp"
-            android:text="Attend (Verb) : tham dự, có mặt, chăm sóc, phục vụ, đi theo, đi kèm, hộ tống"
+                android:layout_height="36dp"
+                android:text="Snow (Noun) : tuyết"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
                 android:textColor="@color/black"
@@ -162,11 +187,10 @@
 
 
 
-
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="55dp"
-                android:text="Hold (Verb) : cầm, nắm,giữ, chứa đựng, tổ chức, tiến hành"
+                android:layout_height="35dp"
+                android:text="Snowfake vboong tuyết, nụ tuyết"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
                 android:textColor="@color/black"
@@ -192,33 +216,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="36dp"
-                android:text="Location (Noun) : vị trí, khu đất , hiện trường"
-                android:paddingTop="6dp"
-                android:textSize="18dp"
-                android:textColor="@color/black"
-                android:textStyle="bold"
-                android:paddingLeft="10dp"
-                android:background="@drawable/test_vien2"
-                android:layout_marginTop="15dp"
-                android:layout_marginStart="7dp"
-                android:layout_marginEnd="7dp"
-                />
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="15dp"
-                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/blue4"/>
-
-
-
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="36dp"
-                android:text="Overcrowded (Adj) : chật ních, đông nghịt"
+                android:text="Snowman (Noun) : người tuyết"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
                 android:textColor="@color/black"
@@ -244,8 +242,35 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="55dp"
-                android:text="Register (Noun,Verb) : (n)danh sách,sổ, sổ sách;(v)đăng ký"
+                android:layout_height="35dp"
+                android:text="pine (Noun) : cây thông"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/blue4"/>
+
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Candle (Noun) : cây nến"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
                 android:textColor="@color/black"
@@ -270,8 +295,8 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="36dp"
-                android:text="Select (verb) : chọn lựa, chọn lọc , tuyển chọn"
+                android:layout_height="35dp"
+                android:text="Card (Noun) : thiệp"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
                 android:textColor="@color/black"
@@ -293,10 +318,14 @@
 
 
 
+
+
+
+
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="36dp"
-                android:text="Sesion (Noun) : phiên, kì ,buổi(họp)"
+                android:layout_height="35dp"
+                android:text="Fireplace (Noun) : lò sưởi"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
                 android:textColor="@color/black"
@@ -314,6 +343,132 @@
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
                 android:textColor="@color/blue4"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Reindeer (Noun) : tuần lộc"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/blue4"/>
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="gift (Noun) : quà tặng"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/blue4"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Sled (Noun) : xe trượt tuyết"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/blue4"/>
+
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Wreath (Noun) : vòng hoa"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/blue4"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Stocking (Noun) : bít tết dài"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/blue4"/>
+
 
 
 

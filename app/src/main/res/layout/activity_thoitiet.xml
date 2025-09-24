@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".vocabulary.tuvug_toeic.Contract"
->
+ >
 
 
 
@@ -33,11 +33,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Chủ đề gia đình"
+            android:text="Chủ đề thời tiết"
             android:textColor="@color/white"
             android:textStyle="bold"
-            android:textSize="26dp"/>
-
+            android:textSize="26dp" />
 
 
     </LinearLayout>
@@ -67,7 +66,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="36dp"
-                android:text="Father (Noun) : cha,bố"
+                android:text="Súnhine (Noun) : ánh nắng"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
                 android:textColor="@color/black"
@@ -85,86 +84,13 @@
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
                 android:textColor="@color/blue4"/>
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="36dp"
-                android:text="Mother (Noun) : mẹ,má"
-                android:paddingTop="6dp"
-                android:textSize="18dp"
-                android:textColor="@color/black"
-                android:textStyle="bold"
-                android:paddingLeft="10dp"
-                android:background="@drawable/test_vien2"
-                android:layout_marginTop="15dp"
-                android:layout_marginStart="7dp"
-                android:layout_marginEnd="7dp"
-                />
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="15dp"
-                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/blue4"/>
-
-
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="35dp"
-                android:text="Aunt (Noun) : cô, dì, thím, mợ"
-                android:paddingTop="6dp"
-                android:textSize="18dp"
-                android:textColor="@color/black"
-                android:textStyle="bold"
-                android:paddingLeft="10dp"
-                android:background="@drawable/test_vien2"
-                android:layout_marginTop="15dp"
-                android:layout_marginStart="7dp"
-                android:layout_marginEnd="7dp"
-                />
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="15dp"
-                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/blue4"/>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="35dp"
-                android:text="Son (Noun) : con trai"
-                android:paddingTop="6dp"
-                android:textSize="18dp"
-                android:textColor="@color/black"
-                android:textStyle="bold"
-                android:paddingLeft="10dp"
-                android:background="@drawable/test_vien2"
-                android:layout_marginTop="15dp"
-                android:layout_marginStart="7dp"
-                android:layout_marginEnd="7dp"
-                />
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="15dp"
-                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/blue4"/>
-
-
-
 
 
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="36dp"
-                android:text="Daughter (Noun) : con gái"
+                android:text="Rain (Noun) : mưa"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
                 android:textColor="@color/black"
@@ -182,7 +108,6 @@
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
                 android:textColor="@color/blue4"/>
-
 
 
 
@@ -190,7 +115,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
-                android:text="Uncle (Noun) : bác, chú , cậu"
+                android:text="Frost (Noun) : sương"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
                 android:textColor="@color/black"
@@ -208,6 +133,30 @@
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
                 android:textColor="@color/blue4"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Drought (Noun) : hạn hán"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/blue4"/>
+
 
 
 
@@ -216,7 +165,59 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="36dp"
-                android:text="Nephew (Noun) : cháu trai"
+                android:text="Hail (Noun) : mưa đá"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/blue4"/>
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Sleet (Noun) : mưa tuyết"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/blue4"/>
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:text="Shower (Noun) : trận mưa rào"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
                 android:textColor="@color/black"
@@ -243,7 +244,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
-                android:text="Cousin (Noun) : anh em họ"
+                android:text="Foggy (Noun) : có sương mù"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
                 android:textColor="@color/black"
@@ -270,7 +271,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
-                android:text="Mother-in-law (Noun) : mẹ chồng, mẹ vợ"
+                android:text="Strormy (Noun) : có gió bão"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
                 android:textColor="@color/black"
@@ -296,7 +297,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
-                android:text="Spouse (Noun) : vợ, chồng"
+                android:text="Dry (Noun) : khô, ráo, cạn"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
                 android:textColor="@color/black"
@@ -325,7 +326,31 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
-                android:text="Brother (Noun) : anh, em trai"
+                android:text="Breeze (Noun) : gió nhẹ"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/blue4"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Humid (Noun) : ẩm ướt"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
                 android:textColor="@color/black"
@@ -351,7 +376,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
-                android:text="Sister (Noun) : chị, em gái"
+                android:text="Hurricane (Noun) : bão(gió cấp >8)"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
                 android:textColor="@color/black"
@@ -369,6 +394,31 @@
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
                 android:textColor="@color/blue4"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Temperature (Noun) : nhiệt độ"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/blue4"/>
+
 
 
 
@@ -377,7 +427,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
-                android:text="Only child (Noun) :  con một"
+                android:text="Climate (Noun) : khí hậu"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
                 android:textColor="@color/black"
@@ -395,6 +445,135 @@
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
                 android:textColor="@color/blue4"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Flood (Noun) : sự ngập lụt"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/blue4"/>
+
+
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Gale (Noun) : bão,gió bão"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/blue4"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Sunny (Adj) : nắng,ngập nắng"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/blue4"/>
+
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Rainy (Adj) : có mưa"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/blue4"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Windy (Adj) : lộng gió"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/blue4"/>
+
+
 
 
 

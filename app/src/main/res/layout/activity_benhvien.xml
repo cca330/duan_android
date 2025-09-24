@@ -5,8 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".vocabulary.tuvug_toeic.Contract"
->
+    tools:context=".vocabulary.tuvug_toeic.Contract">
 
 
 
@@ -33,11 +32,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Conferences"
+            android:text="Chủ đề bệnh viện"
             android:textColor="@color/white"
             android:textStyle="bold"
-            android:textSize="26dp"/>
-
+            android:textSize="26dp" />
 
 
     </LinearLayout>
@@ -66,8 +64,8 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="55dp"
-                android:text="Accommodate (Verb) : điều tiết, điều chỉnh, thu xếp, làm cho phù hợp"
+                android:layout_height="36dp"
+                android:text="Prescription (Noun) : đơn thuốc"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
                 android:textColor="@color/black"
@@ -90,8 +88,8 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="56dp"
-                android:text="Arrangement (Noun) : sự thu xếp, dàn xếp,sắp đặt"
+                android:layout_height="36dp"
+                android:text="Pill (Noun) : viên tròn"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
                 android:textColor="@color/black"
@@ -115,8 +113,8 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="55dp"
-                android:text="Association (Noun) : hội, hội liên hiệp, đoàn thể, liên kết"
+                android:layout_height="35dp"
+                android:text="Tablet (Noun) : thuốc viên"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
                 android:textColor="@color/black"
@@ -138,8 +136,8 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="55dp"
-            android:text="Attend (Verb) : tham dự, có mặt, chăm sóc, phục vụ, đi theo, đi kèm, hộ tống"
+                android:layout_height="35dp"
+                android:text="Doctor (Noun) : bác sĩ"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
                 android:textColor="@color/black"
@@ -165,8 +163,34 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="55dp"
-                android:text="Hold (Verb) : cầm, nắm,giữ, chứa đựng, tổ chức, tiến hành"
+                android:layout_height="36dp"
+                android:text="Consultant (Noun) : bác sĩ tham vấn"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/blue4"/>
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Surgeon (Noun) : bá sĩ phẫu thuật"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
                 android:textColor="@color/black"
@@ -192,33 +216,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="36dp"
-                android:text="Location (Noun) : vị trí, khu đất , hiện trường"
-                android:paddingTop="6dp"
-                android:textSize="18dp"
-                android:textColor="@color/black"
-                android:textStyle="bold"
-                android:paddingLeft="10dp"
-                android:background="@drawable/test_vien2"
-                android:layout_marginTop="15dp"
-                android:layout_marginStart="7dp"
-                android:layout_marginEnd="7dp"
-                />
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="15dp"
-                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/blue4"/>
-
-
-
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="36dp"
-                android:text="Overcrowded (Adj) : chật ních, đông nghịt"
+                android:text="Patient (Noun) : bệnh nhân, người bệnh"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
                 android:textColor="@color/black"
@@ -244,8 +242,35 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="55dp"
-                android:text="Register (Noun,Verb) : (n)danh sách,sổ, sổ sách;(v)đăng ký"
+                android:layout_height="35dp"
+                android:text="Nurse (Noun) : y tá, nữ y tá"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/blue4"/>
+
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Hospital (Noun) : bệnh viện"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
                 android:textColor="@color/black"
@@ -270,8 +295,8 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="36dp"
-                android:text="Select (verb) : chọn lựa, chọn lọc , tuyển chọn"
+                android:layout_height="35dp"
+                android:text="Drip (Noun) : ống chuyền máu"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
                 android:textColor="@color/black"
@@ -293,10 +318,14 @@
 
 
 
+
+
+
+
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="36dp"
-                android:text="Sesion (Noun) : phiên, kì ,buổi(họp)"
+                android:layout_height="35dp"
+                android:text="Operation (Noun) : phẫu thuật"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
                 android:textColor="@color/black"
@@ -314,6 +343,132 @@
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
                 android:textColor="@color/blue4"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Ward (Noun) : khu vực chữa bệnh"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/blue4"/>
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Appointment (Noun) : cuộc hẹn"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/blue4"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Disabled (Noun) : người tàn tật"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/blue4"/>
+
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Injection (Noun) : sự tiêm chích"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/blue4"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Vaccination (Noun) : sự tiêm chủng"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/blue4"/>
+
 
 
 

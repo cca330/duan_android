@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".vocabulary.tuvug_toeic.Contract"
-    android:background="@drawable/maunenblack">
+>
 
 
 
@@ -17,6 +17,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/grey"
         >
 
         <ImageButton
@@ -33,7 +34,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:text="Chủ đề trái cây"
-            android:textColor="@color/purpl3"
+            android:textColor="@color/white"
+            android:textStyle="bold"
             android:textSize="26dp"/>
 
 
@@ -65,20 +67,24 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="36dp"
-                android:paddingLeft="10dp"
-                android:paddingTop="6dp"
                 android:text="Orange (Noun,Verb) : quả cam, màu cam"
-                android:textColor="@color/white"
+                android:paddingTop="6dp"
                 android:textSize="18dp"
+                android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@drawable/test_vien"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
                 />
+
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
+                android:textColor="@color/blue4"/>
 
 
 
@@ -88,11 +94,13 @@
                 android:text="Apple (Noun) : quả táo"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:paddingLeft="10dp"
-                android:background="@drawable/test_vien"
+                android:background="@drawable/test_vien2"
                 android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
                 />
 
 
@@ -100,7 +108,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
+                android:textColor="@color/blue4"/>
 
 
 
@@ -111,37 +119,44 @@
                 android:text="Banana (Noun) : quả chuối"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:paddingLeft="10dp"
-                android:background="@drawable/test_vien"
+                android:background="@drawable/test_vien2"
                 android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
                 />
+
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
+                android:textColor="@color/blue4"/>
 
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
-                android:paddingLeft="10dp"
-                android:paddingTop="6dp"
                 android:text="Lime (Noun) : quả chanh"
-                android:textColor="@color/white"
+                android:paddingTop="6dp"
                 android:textSize="18dp"
+                android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@drawable/test_vien"
-                android:layout_marginTop="15dp"/>
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                />
+
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
-
+                android:textColor="@color/blue4"/>
 
 
 
@@ -153,17 +168,21 @@
                 android:text="plum (Noun) : quả mận"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:paddingLeft="10dp"
-                android:background="@drawable/test_vien"
+                android:background="@drawable/test_vien2"
                 android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
                 />
+
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
+                android:textColor="@color/blue4"/>
 
 
 
@@ -175,17 +194,21 @@
                 android:text="Lemon (Noun) : quả chanh"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:paddingLeft="10dp"
-                android:background="@drawable/test_vien"
+                android:background="@drawable/test_vien2"
                 android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
                 />
+
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
+                android:textColor="@color/blue4"/>
 
 
 
@@ -197,17 +220,21 @@
                 android:text="Grapefruit (Noun) : quả bưởi"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:paddingLeft="10dp"
-                android:background="@drawable/test_vien"
+                android:background="@drawable/test_vien2"
                 android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
                 />
+
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
+                android:textColor="@color/blue4"/>
 
 
 
@@ -220,17 +247,21 @@
                 android:text="Peach (Noun) : quả đào"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:paddingLeft="10dp"
-                android:background="@drawable/test_vien"
+                android:background="@drawable/test_vien2"
                 android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
                 />
+
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
+                android:textColor="@color/blue4"/>
 
 
 
@@ -243,17 +274,21 @@
                 android:text="Pear (Noun) : quả lê"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:paddingLeft="10dp"
-                android:background="@drawable/test_vien"
+                android:background="@drawable/test_vien2"
                 android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
                 />
+
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
+                android:textColor="@color/blue4"/>
 
 
 
@@ -265,17 +300,21 @@
                 android:text="Coconut (Noun) : quả dừa"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:paddingLeft="10dp"
-                android:background="@drawable/test_vien"
+                android:background="@drawable/test_vien2"
                 android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
                 />
+
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
+                android:textColor="@color/blue4"/>
 
 
 
@@ -290,17 +329,21 @@
                 android:text="Olive (Noun) : quả ô-liu"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:paddingLeft="10dp"
-                android:background="@drawable/test_vien"
+                android:background="@drawable/test_vien2"
                 android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
                 />
+
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
+                android:textColor="@color/blue4"/>
 
 
 
@@ -312,17 +355,21 @@
                 android:text="Mango (Noun) : quả xoài"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:paddingLeft="10dp"
-                android:background="@drawable/test_vien"
+                android:background="@drawable/test_vien2"
                 android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
                 />
+
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
+                android:textColor="@color/blue4"/>
 
 
 
@@ -335,18 +382,21 @@
                 android:text="Fig (Noun) : quả sung"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:paddingLeft="10dp"
-                android:background="@drawable/test_vien"
+                android:background="@drawable/test_vien2"
                 android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
                 />
+
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
-
+                android:textColor="@color/blue4"/>
 
 
             <TextView
@@ -355,18 +405,21 @@
                 android:text="Avocado (Noun) : quả bơ"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:paddingLeft="10dp"
-                android:background="@drawable/test_vien"
+                android:background="@drawable/test_vien2"
                 android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
                 />
+
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
-
+                android:textColor="@color/blue4"/>
 
 
 
@@ -377,17 +430,21 @@
                 android:text="Rambutan (Noun) : quả chôm chôm"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:paddingLeft="10dp"
-                android:background="@drawable/test_vien"
+                android:background="@drawable/test_vien2"
                 android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
                 />
+
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
+                android:textColor="@color/blue4"/>
 
 
 
@@ -400,17 +457,21 @@
                 android:text="Guava (Noun) : quả ổi"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:paddingLeft="10dp"
-                android:background="@drawable/test_vien"
+                android:background="@drawable/test_vien2"
                 android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
                 />
+
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
+                android:textColor="@color/blue4"/>
 
 
 

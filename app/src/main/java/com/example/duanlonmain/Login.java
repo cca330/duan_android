@@ -106,7 +106,7 @@ public class Login extends AppCompatActivity {
                                 ps.setString(2, password);
                                 ResultSet rs = ps.executeQuery();
 
-                                if (rs.next() && rs.getInt(1) > 0) {
+                                if (rs.next() && rs.getInt(1) > 0) {//getInt count xem co tai khoan nao ton tai ko
                                     runOnUiThread(() ->
                                             Toast.makeText(Login.this, "Đăng nhập thành công!", Toast.LENGTH_SHORT).show()
                                     );

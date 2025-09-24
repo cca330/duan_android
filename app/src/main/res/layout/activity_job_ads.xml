@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".vocabulary.tuvug_toeic.Contract"
-    android:background="@drawable/maunenblack">
+>
 
 
 
@@ -17,6 +17,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/grey"
         >
 
         <ImageButton
@@ -33,7 +34,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:text="Job Ads and Recruitment"
-            android:textColor="@color/purpl3"
+            android:textColor="@color/white"
+            android:textStyle="bold"
             android:textSize="26dp"/>
 
 
@@ -65,20 +67,24 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="36dp"
-                android:paddingLeft="10dp"
-                android:paddingTop="6dp"
                 android:text="Abundant (Adj) : đầy đủ, đủ lớn, nhiều, thừa"
-                android:textColor="@color/white"
+                android:paddingTop="6dp"
                 android:textSize="18dp"
+                android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@drawable/test_vien"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
                 />
+
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
+                android:textColor="@color/blue4"/>
 
 
 
@@ -88,11 +94,13 @@
                 android:text="Accomplishment (Noun) : thành tựu. thành tích, sự hoàn thành"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:paddingLeft="10dp"
-                android:background="@drawable/test_vien"
+                android:background="@drawable/test_vien2"
                 android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
                 />
 
 
@@ -100,7 +108,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
+                android:textColor="@color/blue4"/>
 
 
 
@@ -111,36 +119,44 @@
                 android:text="Candidate (Noun) : ứng cử viên, thí sinh, người dự thi, người dự tuyển"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:paddingLeft="10dp"
-                android:background="@drawable/test_vien"
+                android:background="@drawable/test_vien2"
                 android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
                 />
+
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
+                android:textColor="@color/blue4"/>
 
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
-                android:paddingLeft="10dp"
-                android:paddingTop="6dp"
                 android:text="Come up with (Verb) : đưa ra, phát hiện, khám phá, ý định"
-                android:textColor="@color/white"
+                android:paddingTop="6dp"
                 android:textSize="18dp"
+                android:textColor="@color/black"
                 android:textStyle="bold"
-                android:background="@drawable/test_vien"
-                android:layout_marginTop="15dp"/>
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                />
+
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
+                android:textColor="@color/blue4"/>
 
 
 
@@ -153,17 +169,21 @@
                 android:text="Commensurate (Adj) : (+with)ứng với, tương xứng với"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:paddingLeft="10dp"
-                android:background="@drawable/test_vien"
+                android:background="@drawable/test_vien2"
                 android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
                 />
+
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
+                android:textColor="@color/blue4"/>
 
 
 
@@ -175,17 +195,21 @@
                 android:text="Match (Noun) : xứng nhau, hợp nhau, địch thủ,đối thủ, người ngang tài ngang sức"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:paddingLeft="10dp"
-                android:background="@drawable/test_vien"
+                android:background="@drawable/test_vien2"
                 android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
                 />
+
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
+                android:textColor="@color/blue4"/>
 
 
 
@@ -197,17 +221,21 @@
                 android:text="Profile (Noun) : tiểu sử, sơ lược"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:paddingLeft="10dp"
-                android:background="@drawable/test_vien"
+                android:background="@drawable/test_vien2"
                 android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
                 />
+
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
+                android:textColor="@color/blue4"/>
 
 
 
@@ -220,17 +248,21 @@
                 android:text="Qualification (Noun) : tư cách, khả năng, năng lực, trình độ"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:paddingLeft="10dp"
-                android:background="@drawable/test_vien"
+                android:background="@drawable/test_vien2"
                 android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
                 />
+
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
+                android:textColor="@color/blue4"/>
 
 
 
@@ -242,17 +274,21 @@
                 android:text="Recruit (Noun,Verb) : (v)tuyển dụng; (n)lính mới, nhân viên mới, thành viên mới"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:paddingLeft="10dp"
-                android:background="@drawable/test_vien"
+                android:background="@drawable/test_vien2"
                 android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
                 />
+
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
+                android:textColor="@color/blue4"/>
 
 
 
@@ -263,17 +299,21 @@
                 android:text="Submit (Verb) : trình, đệ trình, biện hộ"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:paddingLeft="10dp"
-                android:background="@drawable/test_vien"
+                android:background="@drawable/test_vien2"
                 android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
                 />
+
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
+                android:textColor="@color/blue4"/>
 
 
 
@@ -285,17 +325,21 @@
                 android:text="Time-consuming (Adj) : tốn nhiều thời gian, dài dòng"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:paddingLeft="10dp"
-                android:background="@drawable/test_vien"
+                android:background="@drawable/test_vien2"
                 android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
                 />
+
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
+                android:textColor="@color/blue4"/>
 
 
 

@@ -47,7 +47,7 @@ public class ChatwithAI extends AppCompatActivity {
     // AI model
     GenerativeModel generativeModelInstance = new GenerativeModel(
             "gemini-2.5-flash",
-            "AIzaSyDIet7saT20mNZ734GfuJGJhAdVEUTHP9g"
+                                                                                                                                                                    "AIzaSyDIet7saT20mNZ734GfuJGJhAdVEUTHP9g"
     );
     GenerativeModelFutures model = GenerativeModelFutures.from(generativeModelInstance);
 
@@ -76,7 +76,7 @@ public class ChatwithAI extends AppCompatActivity {
         btnMic.setOnClickListener(v -> {
             Intent intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
             intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
-            intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, "vi-VN"); // Hoặc "en-US"
+            intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, "vn-VN"); // Hoặc "en-US"
             try {
                 startActivityForResult(intent, 22); // 22 là requestCode cho mic
             } catch (ActivityNotFoundException e) {

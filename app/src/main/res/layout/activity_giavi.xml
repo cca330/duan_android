@@ -33,11 +33,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Conferences"
+            android:text="Chủ đề gia vị"
             android:textColor="@color/white"
             android:textStyle="bold"
-            android:textSize="26dp"/>
-
+            android:textSize="26dp" />
 
 
     </LinearLayout>
@@ -66,8 +65,8 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="55dp"
-                android:text="Accommodate (Verb) : điều tiết, điều chỉnh, thu xếp, làm cho phù hợp"
+                android:layout_height="36dp"
+                android:text="Sugar (Noun) : đường"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
                 android:textColor="@color/black"
@@ -90,8 +89,8 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="56dp"
-                android:text="Arrangement (Noun) : sự thu xếp, dàn xếp,sắp đặt"
+                android:layout_height="36dp"
+                android:text="Salt (Noun) : muối"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
                 android:textColor="@color/black"
@@ -115,8 +114,8 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="55dp"
-                android:text="Association (Noun) : hội, hội liên hiệp, đoàn thể, liên kết"
+                android:layout_height="35dp"
+                android:text="Pepper (Noun) : hạt tiêu"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
                 android:textColor="@color/black"
@@ -138,8 +137,8 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="55dp"
-            android:text="Attend (Verb) : tham dự, có mặt, chăm sóc, phục vụ, đi theo, đi kèm, hộ tống"
+                android:layout_height="35dp"
+                android:text="Vinegar (Noun) : giấm"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
                 android:textColor="@color/black"
@@ -165,8 +164,34 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="55dp"
-                android:text="Hold (Verb) : cầm, nắm,giữ, chứa đựng, tổ chức, tiến hành"
+                android:layout_height="36dp"
+                android:text="Spice (Noun) : gia vị"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/blue4"/>
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Chili (Noun) : ớt khô"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
                 android:textColor="@color/black"
@@ -192,33 +217,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="36dp"
-                android:text="Location (Noun) : vị trí, khu đất , hiện trường"
-                android:paddingTop="6dp"
-                android:textSize="18dp"
-                android:textColor="@color/black"
-                android:textStyle="bold"
-                android:paddingLeft="10dp"
-                android:background="@drawable/test_vien2"
-                android:layout_marginTop="15dp"
-                android:layout_marginStart="7dp"
-                android:layout_marginEnd="7dp"
-                />
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="15dp"
-                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/blue4"/>
-
-
-
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="36dp"
-                android:text="Overcrowded (Adj) : chật ních, đông nghịt"
+                android:text="Garlic (Noun) : tỏi"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
                 android:textColor="@color/black"
@@ -244,8 +243,8 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="55dp"
-                android:text="Register (Noun,Verb) : (n)danh sách,sổ, sổ sách;(v)đăng ký"
+                android:layout_height="35dp"
+                android:text="Salsa (Noun) : sốt cay"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
                 android:textColor="@color/black"
@@ -270,8 +269,8 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="36dp"
-                android:text="Select (verb) : chọn lựa, chọn lọc , tuyển chọn"
+                android:layout_height="35dp"
+                android:text="Fresh (Adj) : tươi, ẩm thực"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
                 android:textColor="@color/black"
@@ -293,10 +292,11 @@
 
 
 
+
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="36dp"
-                android:text="Sesion (Noun) : phiên, kì ,buổi(họp)"
+                android:layout_height="35dp"
+                android:text="Juicy (Adj) : có nhiều nước(trái cây, thịt...)"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
                 android:textColor="@color/black"
@@ -314,6 +314,192 @@
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
                 android:textColor="@color/blue4"/>
+
+
+
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Tender (Adj) : mềm, không dai(thịt)"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/blue4"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Raw (Adj) : sống(chưa nấu chín)"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/blue4"/>
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Sweet (Adj) : ngọt"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/blue4"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Tasty (Adj) : ngon lành"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/blue4"/>
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Bland (Adj) : nhạt. ít chất bổ"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/blue4"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Hot (Adj) : nóng hổi"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/blue4"/>
+
+
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Boil (Verb) : sôi"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/blue4"/>
+
+
+
+
+
 
 
 

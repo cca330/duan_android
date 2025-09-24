@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".vocabulary.tuvug_toeic.Contract"
-    android:background="@drawable/maunenblack">
+    >
 
 
 
@@ -17,6 +17,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/grey"
         >
 
         <ImageButton
@@ -33,7 +34,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:text="Business Plan"
-            android:textColor="@color/purpl3"
+            android:textColor="@color/white"
+            android:textStyle="bold"
             android:textSize="26dp"/>
 
 
@@ -68,31 +70,36 @@
                 android:paddingLeft="10dp"
                 android:paddingTop="6dp"
                 android:text="Address (Noun, Verb) : (n)địa chỉ, diễn văn, bài nói chyện, tác phong nói chuyện, sự khôn khéo; (v)trình bày"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="18dp"
                 android:textStyle="bold"
-                android:background="@drawable/test_vien"
+                android:background="@drawable/test_vien2"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+
                 />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
+                android:textColor="@color/blue"/>
 
 
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="36dp"
+                android:layout_height="56dp"
                 android:text="Avoid (Verb) : tránh xa, tránh khỏi, hủy bỏ, bác bỏ"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:paddingLeft="10dp"
-                android:background="@drawable/test_vien"
                 android:layout_marginTop="15dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
                 />
 
 
@@ -100,7 +107,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
+                android:textColor="@color/blue4"/>
 
 
 
@@ -111,17 +118,19 @@
                 android:text="Demonstrate (Verb) : bày tỏ, biểu lộ, cho thấy, chứng minh, giải thích"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:paddingLeft="10dp"
-                android:background="@drawable/test_vien"
                 android:layout_marginTop="15dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
                 />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
+                android:textColor="@color/blue4"/>
 
 
             <TextView
@@ -130,17 +139,19 @@
                 android:paddingLeft="10dp"
                 android:paddingTop="6dp"
                 android:text="Develop (Verb) : phát triển, phát huy, mở rộng, triển khai, tiến triển"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="18dp"
                 android:textStyle="bold"
-                android:background="@drawable/test_vien"
-                android:layout_marginTop="15dp"/>
+                android:layout_marginTop="15dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
+                android:textColor="@color/blue4"/>
 
 
 
@@ -153,17 +164,19 @@
                 android:text="Evaluate (Verb) : đánh giá, định giá, ước lượng"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:paddingLeft="10dp"
-                android:background="@drawable/test_vien"
                 android:layout_marginTop="15dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
                 />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
+                android:textColor="@color/blue4"/>
 
 
 
@@ -175,17 +188,19 @@
                 android:text="Gather (Verb) : tập hợp, tụ tập, thu thập, kết luận, suy ra"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:paddingLeft="10dp"
-                android:background="@drawable/test_vien"
                 android:layout_marginTop="15dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
                 />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
+                android:textColor="@color/blue4"/>
 
 
 
@@ -197,17 +212,19 @@
                 android:text="Offer (Noun, Verb) : (n)đề xuất, (v)đề nghị"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:paddingLeft="10dp"
-                android:background="@drawable/test_vien"
                 android:layout_marginTop="15dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
                 />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
+                android:textColor="@color/blue4"/>
 
 
 
@@ -220,17 +237,19 @@
                 android:text="Primarily (Adj) : trước hết, đầu tiên, chính, chủ yếu, quan trọng nhất"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:paddingLeft="10dp"
-                android:background="@drawable/test_vien"
                 android:layout_marginTop="15dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
                 />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
+                android:textColor="@color/blue4"/>
 
 
 
@@ -242,38 +261,42 @@
                 android:text="Risk (Noun) : nguy cơ, sự nguy hiểm, sự rủi ro"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:paddingLeft="10dp"
-                android:background="@drawable/test_vien"
                 android:layout_marginTop="15dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
                 />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
+                android:textColor="@color/blue4"/>
 
 
 
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="36dp"
+                android:layout_height="56dp"
                 android:text="Strategy (Noun) : chiến lược, kế hoạch hành động"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:paddingLeft="10dp"
-                android:background="@drawable/test_vien"
                 android:layout_marginTop="15dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
                 />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
+                android:textColor="@color/blue4"/>
 
 
 
@@ -285,17 +308,19 @@
                 android:text="Strong (Adj) : khỏe, mạnh, tốt, bền , kiên quyết, sôi nổi, nhiệt tình..."
                 android:paddingTop="6dp"
                 android:textSize="18dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:paddingLeft="10dp"
-                android:background="@drawable/test_vien"
                 android:layout_marginTop="15dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
                 />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
+                android:textColor="@color/blue4"/>
 
 
 
@@ -306,17 +331,19 @@
                 android:text="Substitution (Noun) : thay đổi, sự thay thế"
                 android:paddingTop="6dp"
                 android:textSize="18dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:paddingLeft="10dp"
-                android:background="@drawable/test_vien"
                 android:layout_marginTop="15dp"
+                android:background="@drawable/test_vien2"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
                 />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-                android:textColor="@color/white"/>
+                android:textColor="@color/blue4"/>
 
 
 
