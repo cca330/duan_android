@@ -11,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.SeekBar;
+import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -23,10 +24,12 @@ import java.util.ArrayList;
 public class QuestionAdapter extends RecyclerView.Adapter<QuestionAdapter.QuestionViewHolder> {
 
     private Context context;
+
     private ArrayList<Question> questions;
 
     // MediaPlayer chỉ chạy 1 bài
     private MediaPlayer mediaPlayer;
+
     private Handler handler = new Handler();
 
     public QuestionAdapter(Context context, ArrayList<Question> questionList) {
@@ -50,6 +53,11 @@ public class QuestionAdapter extends RecyclerView.Adapter<QuestionAdapter.Questi
         holder.rb2.setText(q.options[1]);
         holder.rb3.setText(q.options[2]);
         holder.rb4.setText(q.options[3]);
+        holder.txtcau.setText(q.socau + ".");
+
+
+
+
 
         // Reset màu khi bind lại
         holder.rb1.setTextColor(Color.BLACK);
@@ -65,13 +73,36 @@ public class QuestionAdapter extends RecyclerView.Adapter<QuestionAdapter.Questi
             else if (checkedId == holder.rb3.getId()) selected = 2;
             else if (checkedId == holder.rb4.getId()) selected = 3;
 
+
+
+
+            // Hiện đầy đủ text của cả 4 đáp án
+            holder.rb1.setText("A. " + q.answ[0]);
+            holder.rb2.setText("B. " + q.answ[1]);
+            holder.rb3.setText("C. " + q.answ[2]);
+            holder.rb4.setText("D. " + q.answ[3]);
+
+            // Reset màu về đen trước
+            holder.rb1.setTextColor(Color.BLACK);
+            holder.rb2.setTextColor(Color.BLACK);
+            holder.rb3.setTextColor(Color.BLACK);
+            holder.rb4.setTextColor(Color.BLACK);
+
+            // Nếu chọn đúng
             if (selected == q.correctIndex) {
                 getRadio(holder, selected).setTextColor(Color.GREEN);
             } else {
-                getRadio(holder, selected).setTextColor(Color.RED);
+                // Nếu chọn sai
+                if (selected != -1) {
+                    getRadio(holder, selected).setTextColor(Color.RED);
+                }
+                // Đáp án đúng sẽ luôn xanh
                 getRadio(holder, q.correctIndex).setTextColor(Color.GREEN);
             }
-        });
+
+
+
+    });
 
         // --- PLAY ---
         holder.btnPlay.setOnClickListener(v -> {
@@ -137,23 +168,7 @@ public class QuestionAdapter extends RecyclerView.Adapter<QuestionAdapter.Questi
         }
     }
 
-    public void playAudioAt(int position) {
-        if (position < 0 || position >= questions.size()) return;
 
-        // Dừng audio cũ
-        if (mediaPlayer != null) {
-            mediaPlayer.stop();
-            mediaPlayer.release();
-            mediaPlayer = null;
-        }
-
-        // Tạo audio mới cho câu hiện tại
-        Question q = questions.get(position);
-        mediaPlayer = MediaPlayer.create(context, q.audioRes);
-        mediaPlayer.start();
-
-        // Nếu muốn cập nhật SeekBar thì notifyItemChanged(position)
-    }
 
     // ViewHolder
     static class QuestionViewHolder extends RecyclerView.ViewHolder {
@@ -161,6 +176,8 @@ public class QuestionAdapter extends RecyclerView.Adapter<QuestionAdapter.Questi
         RadioGroup radioGroup;
         RadioButton rb1, rb2, rb3, rb4;
         SeekBar seekBar;
+        TextView txtcau;
+
 
         public QuestionViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -173,6 +190,8 @@ public class QuestionAdapter extends RecyclerView.Adapter<QuestionAdapter.Questi
             rb3 = itemView.findViewById(R.id.rb3);
             rb4 = itemView.findViewById(R.id.rb4);
             seekBar = itemView.findViewById(R.id.seekBar);
+            txtcau = itemView.findViewById(R.id.txtcau);
+
         }
     }
 
