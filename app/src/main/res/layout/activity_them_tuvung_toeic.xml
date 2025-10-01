@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".vocabulary.tuvug_toeic.Them_tuvung_toeic"
-    android:background="@drawable/maunenblack">
+>
 
 
     <LinearLayout
@@ -15,6 +15,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/grey"
         >
 
 
@@ -32,7 +33,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:text="Từ vựng TOEIC"
-            android:textColor="@color/purpl3"
+            android:textColor="@color/white"
+            android:textStyle="bold"
             android:textSize="26dp"/>
 
 

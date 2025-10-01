@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".vocabulary.Vocabulary"
-    android:background="@drawable/maunenblack">
+ >
 
 
 
@@ -16,7 +16,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:background="@color/black">
+        android:background="@color/grey">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/angle_left_regular_full"
+            android:layout_marginTop="20dp"/>
 
 
 
@@ -44,18 +52,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+
             >
 
 
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="45dp"
+                android:layout_height="48dp"
                 android:text="Từ vựng TOEIC"
                 android:padding="10dp"
                 android:paddingTop="6dp"
-                android:textSize="20dp"
-                android:textColor="@color/white"
+                android:textSize="23dp"
+                android:textColor="@color/blue4"
                 android:textStyle="bold"
                 />
 
@@ -176,16 +185,16 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="45dp"
+                android:layout_height="48dp"
                 android:layout_marginTop="35dp"
+                android:clickable="false"
+                android:focusable="false"
                 android:padding="10dp"
                 android:paddingTop="10dp"
                 android:text="Từ vựng tiếng anh theo chủ đề"
-                android:textColor="@color/white"
-                android:textSize="20dp"
-                android:textStyle="bold"
-                android:clickable="false"
-                android:focusable="false"/>
+                android:textColor="@color/blue4"
+                android:textSize="23dp"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="160dp"
@@ -307,12 +316,12 @@
 
              <TextView
                  android:layout_width="match_parent"
-                 android:layout_height="45dp"
+                 android:layout_height="48dp"
                  android:text="Từ vựng TOEFL"
                  android:padding="10dp"
                  android:paddingTop="6dp"
-                 android:textSize="20dp"
-                 android:textColor="@color/white"
+                 android:textSize="23dp"
+                 android:textColor="@color/blue4"
                  android:textStyle="bold"
                  android:layout_marginTop="35dp"
                  android:clickable="false"

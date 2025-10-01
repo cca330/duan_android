@@ -10,6 +10,14 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.example.duanlonmain.R;
+import com.example.duanlonmain.vocabulary.chude.Giadinh;
+import com.example.duanlonmain.vocabulary.chude.Mau_sac;
+import com.example.duanlonmain.vocabulary.chude.Nhatruong;
+import com.example.duanlonmain.vocabulary.chude.Traicay;
+import com.example.duanlonmain.vocabulary.chude.Trangphuc;
+import com.example.duanlonmain.vocabulary.toefl.Toelf1;
+import com.example.duanlonmain.vocabulary.toefl.Toelf101;
+import com.example.duanlonmain.vocabulary.toefl.Toelf301;
 import com.example.duanlonmain.vocabulary.tuvug_toeic.Business;
 import com.example.duanlonmain.vocabulary.tuvug_toeic.Conferences;
 import com.example.duanlonmain.vocabulary.tuvug_toeic.Contract;
@@ -19,6 +27,7 @@ import com.example.duanlonmain.vocabulary.tuvug_toeic.Warranties;
 
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -51,6 +60,7 @@ public class Vocabulary extends AppCompatActivity {
     TextView txt_vocabulary_401;
     TextView txt_vocabulary_501;
 
+    ImageButton btn_back;
 
 
     @Override
@@ -76,6 +86,15 @@ public class Vocabulary extends AppCompatActivity {
         txt_vocabulary_301 = findViewById(R.id.recycler_vocabulary_301);
         txt_vocabulary_401 = findViewById(R.id.recycler_vocabulary_401);
         txt_vocabulary_501 = findViewById(R.id.recycler_vocabulary_501);
+        btn_back = findViewById(R.id.btn_back);
+
+
+
+
+
+        btn_back.setOnClickListener(v -> {
+            finish();
+        });
 
 
 
@@ -113,6 +132,77 @@ public class Vocabulary extends AppCompatActivity {
             Intent intent = new Intent(Vocabulary.this, Them_tuvung_toeic.class);
             startActivity(intent);
         });
+
+
+
+
+
+        txt_vocabulary_chu_de_mausac.setOnClickListener(v -> {
+            Intent intent = new Intent(Vocabulary.this, Mau_sac.class);
+            startActivity(intent);
+        });
+
+
+
+        txt_vocabulary_chu_de_traicay.setOnClickListener(v -> {
+            Intent intent = new Intent(Vocabulary.this, Traicay.class);
+            startActivity(intent);
+        });
+
+
+
+        txt_vocabulary_chu_de_giadinh.setOnClickListener(v -> {
+            Intent intent = new Intent(Vocabulary.this, Giadinh.class);
+            startActivity(intent);
+        });
+
+
+
+        txt_vocabulary_chu_de_nhatruong.setOnClickListener(v -> {
+            Intent intent = new Intent(Vocabulary.this, Nhatruong.class);
+            startActivity(intent);
+        });
+
+
+
+        txt_vocabulary_chu_de_trangphuc.setOnClickListener(v -> {
+            Intent intent = new Intent(Vocabulary.this, Trangphuc.class);
+            startActivity(intent);
+        });
+
+
+
+        txt_vocabulary_chu_de_xemthem.setOnClickListener(v -> {
+            Intent intent = new Intent(Vocabulary.this, Them_tuvung_toeic.class);
+            startActivity(intent);
+        });
+
+
+        txt_vocabulary_1.setOnClickListener(v -> {
+            Intent intent = new Intent(Vocabulary.this, Toelf1.class);
+            startActivity(intent);
+        });
+
+
+        txt_vocabulary_101.setOnClickListener(v -> {
+            Intent intent = new Intent(Vocabulary.this, Toelf101.class);
+            startActivity(intent);
+        });
+
+
+        txt_vocabulary_201.setOnClickListener(v -> {
+            Intent intent = new Intent(Vocabulary.this, Toelf301.class);
+            startActivity(intent);
+        });
+
+
+
+
+
+
+
+
+
 
 
     }
