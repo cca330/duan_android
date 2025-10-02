@@ -107,8 +107,8 @@
                 android:id="@+id/img_loginshowpass"
                 android:layout_width="45dp"
                 android:layout_height="45dp"
-                android:layout_marginStart="300dp"
-                android:layout_marginTop="-50dp"
+                android:layout_marginStart="310dp"
+                android:layout_marginTop="-55dp"
                 android:background="@android:color/transparent"
                 app:srcCompat="@drawable/baseline_remove_red_eye_24"
                 />
