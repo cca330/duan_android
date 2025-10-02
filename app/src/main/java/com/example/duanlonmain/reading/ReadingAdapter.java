@@ -86,10 +86,10 @@ public class ReadingAdapter extends RecyclerView.Adapter<ReadingAdapter.Question
 
             holder.giaithichcauhoi.setText(q.giaithichcauhoi);
             holder.giaithichdapan1.setText(q.giaithichdapan[0]);
-            holder.giaithichdapan2.setText(q.giaithichdapan[1]);
-            holder.giaithichdapan3.setText(q.giaithichdapan[2]);
-            holder.giaithichdapan4.setText(q.giaithichdapan[3]);
-            holder.giaithichdapan5.setText(q.giaithichdapan[4]);
+            holder.giaithichdapan2.setText("\t+ "+q.giaithichdapan[1]);
+            holder.giaithichdapan3.setText("\t+ "+q.giaithichdapan[2]);
+            holder.giaithichdapan4.setText("\t+ "+q.giaithichdapan[3]);
+            holder.giaithichdapan5.setText("\t+ "+q.giaithichdapan[4]);
             holder.giaithichdapan6.setText(q.giaithichdapan[5]);
 
 

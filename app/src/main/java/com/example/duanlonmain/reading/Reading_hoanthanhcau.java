@@ -43,30 +43,6 @@ public class Reading_hoanthanhcau extends AppCompatActivity {
 
         questions = new ArrayList<>();
 
-        questions.add(new Reading_quetion_hoanthanhcau(new String[]{"A. addition",
-                "B.additions",
-                "C. additional",
-                "D. additionlly"},
-                "1.The coordinator concluded that Thursday's workshop will need ___ tables.",
-                "Người điều phối kết luận rằng hội thảo thứ năm sẽ cần 'thêm' bàn",
-                2,
-                new String[]{"(n)sự bổ sung","sự bổ sung(danh từ số nhiều)","(adj)bổ sung","(adv)thêm vào đó"},
-                1,
-                new String[]{"thêm","thêm","thêm","thêm","thêm","thêm"}));
-
-
-
-
-        questions.add(new Reading_quetion_hoanthanhcau(new String[]{"A. addition",
-                "B.additions",
-                "C. additional",
-                "D. additionlly"},
-                "1.The coordinator concluded that Thursday's workshop will need ___ tables.",
-                "Người điều phối kết luận rằng hội thảo thứ năm sẽ cần 'thêm' bàn",
-                2,
-                new String[]{"(n)sự bổ sung","sự bổ sung(danh từ số nhiều)","(adj)bổ sung","(adv)thêm vào đó"},
-                1,
-                new String[]{"thêm","thêm","thêm","thêm","thêm","thêm"}));
 
 
 
@@ -81,7 +57,27 @@ public class Reading_hoanthanhcau extends AppCompatActivity {
                 2,
                 new String[]{"(n)sự bổ sung","sự bổ sung(danh từ số nhiều)","(adj)bổ sung","(adv)thêm vào đó"},
                 1,
-                new String[]{"thêm","thêm","thêm","thêm","thêm","thêm"}));
+                new String[]{"Chỗ trống cần một tính từ để bổ nghĩa cho danh từ 'tables'",
+                        "A. addition là một danh từ có nghĩa là 'hành động thêm vào' hoặc 'thứ được thêm vào'. Nó không thể trực tiếp bổ sung nghĩa cho danh từ 'tables'",
+                        "B. additions là dạng số nhiều của danh từ addition. Tương tự như addition, nó cũng là một danh từ và không thể hoạt động như một tính từ để mô tả tables",
+                        "C. additional là một tính từ, có nghĩa là 'được thêm vào, phụ thêm, hoặc bổ sung'. Nó bổ nghĩa chính xác danh từ tables, chỉ ra rằng cần thêm bàn. Điều anyf hoàn toàn phù hớp với ngữ cảnh, ngụ ý rằng buổi hội thảo caanf nhiều bàn hơn số lượng hiện có.",
+                        "D. additionally là một trạng từ có nghĩa là 'ngoiaf ra, cũng vậy'. Trạng từ bổ nghĩa cho động từ ,tính từ hoặc các trạng từ khác, nhưng chúng không trực tiếp bổ sung nghĩa cho danh từ. Do đó sai về mựt ngữ pháp ở vị trí này.",
+                        "Vì vậy, additional là lựa chọn đúng"}));
+
+
+
+
+
+        questions.add(new Reading_quetion_hoanthanhcau(new String[]{"A. addition",
+                "B.additions",
+                "C. additional",
+                "D. additionlly"},
+                "1.The coordinator concluded that Thursday's workshop will need ___ tables.",
+                "Người điều phối kết luận rằng hội thảo thứ năm sẽ cần 'thêm' bàn",
+                2,
+                new String[]{"(n)sự bổ sung","sự bổ sung(danh từ số nhiều)","(adj)bổ sung","(adv)thêm vào đó"},
+                1,
+                new String[]{"thêm1234","thêm3442","thêm564442","thêm52223212","thê4eoger","thêm"}));
 
 
 
