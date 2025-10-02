@@ -183,7 +183,7 @@ public class QuestionAdapter extends RecyclerView.Adapter<QuestionAdapter.Questi
             super(itemView);
             imgQuestion = itemView.findViewById(R.id.imgQuestion);
             btnPlay = itemView.findViewById(R.id.imageViewplay);
-            btnRestart = itemView.findViewById(R.id.imageViewRestart); // thêm nút restart
+            btnRestart = itemView.findViewById(R.id.imageViewRestart);
             radioGroup = itemView.findViewById(R.id.radioGroup);
             rb1 = itemView.findViewById(R.id.rb1);
             rb2 = itemView.findViewById(R.id.rb2);

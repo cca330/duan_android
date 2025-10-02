@@ -1,6 +1,5 @@
-package com.example.duanlonmain;
+package com.example.duanlonmain.intro;
 
-import android.content.ContentProvider;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -8,12 +7,10 @@ import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 import androidx.viewpager.widget.ViewPager;
 
-import com.example.duanlonmain.Adapter.Adapter_walkthrough;
+import com.example.duanlonmain.login.Login;
+import com.example.duanlonmain.R;
 
 import me.relex.circleindicator.CircleIndicator;
 

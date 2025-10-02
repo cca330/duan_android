@@ -1,4 +1,4 @@
-package com.example.duanlonmain;
+package com.example.duanlonmain.login;
 
 import android.os.Bundle;
 
@@ -13,6 +13,8 @@ import android.widget.TextView;
 import android.content.Intent; // QUAN TRỌNG: Import Intent
 import android.widget.Toast;
 
+
+import com.example.duanlonmain.R;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

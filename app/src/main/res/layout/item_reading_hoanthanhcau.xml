@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white2">
+
+
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="370dp"
+                android:orientation="vertical"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/vien_trang"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/duong_vien_tren_blue"
+                    >
+
+                    <TextView
+                        android:id="@+id/txtcau"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" 1"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:padding="15dp"/>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/giaithichcauhoi"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+
+                    android:padding="10dp"
+                    android:textSize="15dp"
+                    android:background="@color/blue"/>
+
+
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioGroup"
+                    android:orientation="vertical"
+                    >
+
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="A"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"
+                        android:padding="5dp"
+                        android:id="@+id/rb11"/>
+
+
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="B"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"
+                        android:padding="5dp"
+                        android:id="@+id/rb22"/>
+
+
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="C"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"
+                        android:padding="5dp"
+                        android:id="@+id/rb33"/>
+
+
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="D"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"
+                        android:padding="5dp"
+                        android:id="@+id/rb44"/>
+
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:background="@color/blue"
+                android:orientation="vertical"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginTop="10dp"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/giaithichdapan1"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:padding="10dp"
+                    android:textSize="15dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/giaithichdapan2"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:padding="10dp"
+                    android:textSize="15dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/giaithichdapan3"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:padding="10dp"
+                    android:textSize="15dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/giaithichdapan4"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:padding="10dp"
+                    android:textSize="15dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/giaithichdapan5"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:padding="10dp"
+                    android:textSize="15dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/giaithichdapan6"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:padding="10dp"
+                    android:textSize="15dp"
+                    />
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

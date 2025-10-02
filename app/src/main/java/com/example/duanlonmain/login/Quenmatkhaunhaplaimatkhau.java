@@ -1,12 +1,10 @@
-package com.example.duanlonmain;
+package com.example.duanlonmain.login;
 
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+
 import android.text.InputType;
 import android.view.View;
 import android.widget.Button;
@@ -16,9 +14,10 @@ import android.content.Intent; // QUAN TRỌNG: Import Intent
 import android.widget.Toast;
 import android.widget.ImageButton;
 
+import com.example.duanlonmain.R;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException; // Import SQLException
 
 
