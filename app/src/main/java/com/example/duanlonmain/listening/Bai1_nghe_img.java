@@ -149,6 +149,7 @@ public class Bai1_nghe_img extends AppCompatActivity {
             if (currentPosition[0] < questions.size() - 1) {
                 currentPosition[0]++;
                 recyclerQuestions.smoothScrollToPosition(currentPosition[0]);
+                adapter.stopCurrentAudio();
             }
         });
 
@@ -156,6 +157,7 @@ public class Bai1_nghe_img extends AppCompatActivity {
             if (currentPosition[0] > 0) {
                 currentPosition[0]--;
                 recyclerQuestions.smoothScrollToPosition(currentPosition[0]);
+                adapter.stopCurrentAudio();
             }
         });
 

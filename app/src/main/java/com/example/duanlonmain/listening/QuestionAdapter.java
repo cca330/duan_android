@@ -32,6 +32,7 @@ public class QuestionAdapter extends RecyclerView.Adapter<QuestionAdapter.Questi
 
     private Handler handler = new Handler();
 
+    private int currentPlayingPosition = -1;
     public QuestionAdapter(Context context, ArrayList<Question> questionList) {
         this.context = context;
         this.questions = questionList;
@@ -104,20 +105,43 @@ public class QuestionAdapter extends RecyclerView.Adapter<QuestionAdapter.Questi
 
     });
 
-        // --- PLAY ---
         holder.btnPlay.setOnClickListener(v -> {
-            releaseMedia(); // dừng audio cũ nếu có
+
+            int clickedPosition = holder.getAdapterPosition();// lấy vị trí item hiện tại
+
+            // Nếu đang phát mà nhấn lại chính câu đó → tắt
+            if (mediaPlayer != null && currentPlayingPosition == clickedPosition) {
+                if (mediaPlayer.isPlaying()) {
+                    mediaPlayer.stop();
+                }
+                releaseMedia();
+                holder.btnPlay.setImageResource(R.drawable.circle_play_solid_full);
+                currentPlayingPosition = -1;
+                return;
+            }
+
+            // Nếu đang phát câu khác → tắt audio cũ
+            if (mediaPlayer != null) {
+                releaseMedia();
+                notifyItemChanged(currentPlayingPosition); // cập nhật lại icon play câu cũ
+            }
+
+            // Phát câu mới
             mediaPlayer = MediaPlayer.create(context, q.audioRes);
             mediaPlayer.start();
-
-            // cập nhật seekbar
+            holder.btnPlay.setImageResource(R.drawable.pause_solid_full);
+            currentPlayingPosition = clickedPosition;
             handler.post(updateSeekBar(holder));
 
+            // Khi phát xong → đổi icon về play
             mediaPlayer.setOnCompletionListener(mp -> {
-                holder.seekBar.setProgress(0);
+                holder.btnPlay.setImageResource(R.drawable.circle_play_solid_full);
                 releaseMedia();
+                currentPlayingPosition = -1;
             });
+
         });
+
 
         // --- RESTART ---
         holder.btnRestart.setOnClickListener(v -> {
@@ -151,8 +175,7 @@ public class QuestionAdapter extends RecyclerView.Adapter<QuestionAdapter.Questi
             @Override
             public void run() {
                 if (mediaPlayer != null && mediaPlayer.isPlaying()) {
-                    int progress = (int) (((float) mediaPlayer.getCurrentPosition()
-                            / mediaPlayer.getDuration()) * 100);
+                    int progress = (int) (((float) mediaPlayer.getCurrentPosition() / mediaPlayer.getDuration()) * 100);
                     holder.seekBar.setProgress(progress);
                     handler.postDelayed(this, 500);
                 }
@@ -163,10 +186,18 @@ public class QuestionAdapter extends RecyclerView.Adapter<QuestionAdapter.Questi
     // Giải phóng MediaPlayer
     private void releaseMedia() {
         if (mediaPlayer != null) {
-            mediaPlayer.release();
+            try {
+                mediaPlayer.stop();
+                mediaPlayer.release();
+
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
             mediaPlayer = null;
         }
+        handler.removeCallbacksAndMessages(null);
     }
+
 
 
 
@@ -203,4 +234,11 @@ public class QuestionAdapter extends RecyclerView.Adapter<QuestionAdapter.Questi
             default: return h.rb4;
         }
     }
+
+    public void stopCurrentAudio() {
+        releaseMedia();
+        notifyItemChanged(currentPlayingPosition);
+        currentPlayingPosition = -1;
+    }
+
 }
