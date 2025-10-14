@@ -7,9 +7,6 @@ import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import com.example.duanlonmain.R;
 import com.example.duanlonmain.vocabulary.Vocabulary;
@@ -39,7 +36,7 @@ public class Them_tuvung_toeic extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_them_tuvung_toeic);
+        setContentView(R.layout.activity_vocabulary_them_tuvung_toeic);
 
 
 

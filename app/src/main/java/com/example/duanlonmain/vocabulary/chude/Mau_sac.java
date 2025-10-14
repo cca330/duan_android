@@ -5,9 +5,6 @@ import android.widget.ImageButton;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import com.example.duanlonmain.R;
 
@@ -19,7 +16,7 @@ public class Mau_sac extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_mau_sac);
+        setContentView(R.layout.activity_vocabulary_chude_mau_sac);
 
 
         btn_back = findViewById(R.id.btn_back);
