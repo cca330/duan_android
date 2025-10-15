@@ -42,7 +42,7 @@ dependencies {
     androidTestImplementation(libs.espresso.core)
 
 
-
+    implementation("com.squareup.okhttp3:okhttp:4.12.0")
     implementation(libs.jtds)
     implementation("me.relex:circleindicator:2.1.6")
     implementation("com.google.android.material:material:1.0.0")

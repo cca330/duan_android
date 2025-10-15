@@ -15,6 +15,7 @@ import android.widget.Toast;
 
 
 import com.example.duanlonmain.R;
+import com.example.duanlonmain.menu_Activity;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -112,7 +113,7 @@ public class Login extends AppCompatActivity {
                                     runOnUiThread(() ->
                                             Toast.makeText(Login.this, "Đăng nhập thành công!", Toast.LENGTH_SHORT).show()
                                     );
-                                    Intent intent = new Intent(Login.this, MainActivity.class);
+                                    Intent intent = new Intent(Login.this, menu_Activity.class);
                                     startActivity(intent);
                                 } else {
                                     runOnUiThread(() ->
