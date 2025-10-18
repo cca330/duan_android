@@ -3,7 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -14,16 +18,22 @@
         android:roundIcon="@drawable/battle_net_brands_solid_full"
         android:supportsRtl="true"
         android:theme="@style/Theme.Duanlonmain">
+        <activity
+            android:name=".listening.Bai2_nghe_cauhoi_dapan"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
         <activity
             android:name=".reading.Reading_hoanthanhcau"
             android:exported="true" />
         <activity
             android:name=".listening.Bai1_nghe_img"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".vocabulary.toefl.Toelf301"
             android:exported="false" />
@@ -155,58 +165,14 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".noi_part1_cauHoi"
-            android:exported="true"/>
-        <activity
-            android:name=".noi_part1_deBai"
-            android:exported="true"/>
-        <activity
-            android:name=".noi_part2_cauHoi"
-            android:exported="true"/>
-        <activity
-            android:name=".noi_part2_deBai"
-            android:exported="true"/>
-        <activity
-            android:name=".noi_part3_cauHoi"
-            android:exported="true"/>
-        <activity
-            android:name=".noi_part3_deBai_1"
-            android:exported="true"/>
-        <activity
-            android:name=".noi_part3_deBai_2"
-            android:exported="true"/>
-        <activity
-            android:name=".noi_part3_deBai_3"
-            android:exported="true"/>
-        <activity
-            android:name=".noi_part4_cauHoi"
-            android:exported="true"/>
-        <activity
-            android:name=".noi_part4_deBai_1"
-            android:exported="true"/>
-        <activity
-            android:name=".noi_part4_deBai_2"
-            android:exported="true"/>
-        <activity
-            android:name=".noi_part4_deBai_3"
-            android:exported="true"/>
-        <activity
-            android:name=".noi_part5_cauHoi"
-            android:exported="true"/>
-        <activity
-            android:name=".noi_part5_deBai"
-            android:exported="true"/>
-        <activity android:name=".menu_Activity"
-            android:exported="true"/>
 
-
+        <activity
+            android:name=".menu_Activity"
+            android:exported="true" />
     </application>
-    <uses-permission android:name="android.permission.RECORD_AUDIO" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.INTERNET" />
+
 </manifest>

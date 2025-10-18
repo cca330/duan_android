@@ -18,7 +18,7 @@ import java.util.ArrayList;
 import com.example.duanlonmain.R;
 
 public class Reading_hoanthanhcau extends AppCompatActivity {
-    ImageView btnPrey, btnNext;
+    ImageView btnPrey, btnNext,btnBack;
     ReadingAdapter adapter;
 
     RecyclerView recyclerQuestions;
@@ -37,6 +37,11 @@ public class Reading_hoanthanhcau extends AppCompatActivity {
 
         btnPrey = findViewById(R.id.btnPrev);
         btnNext = findViewById(R.id.btnNext);
+        btnBack = findViewById(R.id.btn_back);
+
+        btnBack.setOnClickListener(v -> {
+            finish();
+        });
         recyclerQuestions = findViewById(R.id.recyclerQuestions);
 
 

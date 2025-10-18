@@ -16,10 +16,6 @@ import android.content.Intent;
 
 import com.example.duanlonmain.R;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-
 public class Dangky extends AppCompatActivity {
 
    EditText edt_dangkinhapusername,edt_dangkinhappassword,edt_dangkinhaplaipassword,edt_dangkysdt;
@@ -98,90 +94,44 @@ public class Dangky extends AppCompatActivity {
 
 
 
-        btn_dangkitaotaikhoan.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String username = edt_dangkinhapusername.getText().toString();
-                String password = edt_dangkinhappassword.getText().toString();
-                String repassword = edt_dangkinhaplaipassword.getText().toString();
-                String sdt = edt_dangkysdt.getText().toString();
 
-                if (username.isEmpty() || password.isEmpty() || repassword.isEmpty() || sdt.isEmpty()) {
-                    Toast.makeText(Dangky.this, "Vui lòng nhập đầy đủ thông tin", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-                if (!password.equals(repassword)) {
-                    Toast.makeText(Dangky.this, "Mật khẩu không khớp", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-                if(sdt.length() != 10 ){
-                    Toast.makeText(Dangky.this, "Số điện thoại không hợp lệ", Toast.LENGTH_SHORT).show();
-                }
+       btn_dangkitaotaikhoan.setOnClickListener(v -> {
+           String username = edt_dangkinhapusername.getText().toString().trim();
+           String password = edt_dangkinhappassword.getText().toString().trim();
+           String repassword = edt_dangkinhaplaipassword.getText().toString().trim();
+           String sdt = edt_dangkysdt.getText().toString().trim();
 
+           if (username.isEmpty() || password.isEmpty() || repassword.isEmpty() || sdt.isEmpty()) {
+               Toast.makeText(Dangky.this, "Vui lòng nhập đầy đủ thông tin", Toast.LENGTH_SHORT).show();
+               return;
+           }
+           if (!password.equals(repassword)) {
+               Toast.makeText(Dangky.this, "Mật khẩu không khớp", Toast.LENGTH_SHORT).show();
+               return;
+           }
+           if (sdt.length() != 10) {
+               Toast.makeText(Dangky.this, "Số điện thoại không hợp lệ", Toast.LENGTH_SHORT).show();
+               return;
+           }
 
-                // chạy trong Thread riêng, không chạy trực tiếp trong UI Thread
-                new Thread(new Runnable() {
-                    @Override
-                    public void run() {
-                        try {
-                            // Kết nối SQL Server
-                            Connection conn = ConnectionClass.CONN();
-                            if (conn != null) {
+           new Thread(() -> {
+               AppDatabase db = AppDatabase.getInstance(Dangky.this);
+               UserDao userDao = db.userDao();
 
-                                // kiem tra user
-                                String checkUser = "SELECT COUNT(*) FROM USE_PASSWORD WHERE USENAME=?";
-                                PreparedStatement psUser = conn.prepareStatement(checkUser);
-                                psUser.setString(1, username);
-                                ResultSet rsUser = psUser.executeQuery();
-                                if (rsUser.next() && rsUser.getInt(1) > 0) {
-                                    runOnUiThread(() ->
-                                            Toast.makeText(Dangky.this, "Tên tài khoản đã tồn tại!", Toast.LENGTH_SHORT).show()
-                                    );
-                                    return;
-                                }
+               if (userDao.checkUsernameExists(username) > 0) {
+                   runOnUiThread(() -> Toast.makeText(Dangky.this, "Tên tài khoản đã tồn tại!", Toast.LENGTH_SHORT).show());
+               } else if (userDao.checkPhoneExists(sdt) > 0) {
+                   runOnUiThread(() -> Toast.makeText(Dangky.this, "Số điện thoại đã tồn tại!", Toast.LENGTH_SHORT).show());
+               } else {
+                   userDao.insertUser(new User(username, password, sdt));
+                   runOnUiThread(() -> {
+                       Toast.makeText(Dangky.this, "Đăng ký thành công!", Toast.LENGTH_SHORT).show();
+                       startActivity(new Intent(Dangky.this, Login.class));
+                   });
+               }
+           }).start();
+       });
 
-// check sdt                    / Kiểm tra số điện thoại trùng
-                                String checkPhone = "SELECT COUNT(*) FROM USE_PASSWORD WHERE SDT=?";
-                                PreparedStatement psPhone = conn.prepareStatement(checkPhone);
-                                psPhone.setString(1, sdt);
-                                ResultSet rsPhone = psPhone.executeQuery();
-                                if (rsPhone.next() && rsPhone.getInt(1) > 0) {
-                                    runOnUiThread(() ->
-                                            Toast.makeText(Dangky.this, "Số điện thoại đã tồn tại!", Toast.LENGTH_SHORT).show()
-                                    );
-                                    return;
-                                }
-                                else {
-                                    String insertQuery = "INSERT INTO USE_PASSWORD (USENAME, PASSWORD, SDT) VALUES (?, ?, ?)";
-                                    PreparedStatement psInsert = conn.prepareStatement(insertQuery);
-                                    psInsert.setString(1, username);
-                                    psInsert.setString(2, password);
-                                    psInsert.setString(3, sdt);
-                                    psInsert.executeUpdate();
-
-                                    runOnUiThread(() -> {
-                                        Toast.makeText(Dangky.this, "Đăng ký thành công!", Toast.LENGTH_SHORT).show();
-                                        startActivity(new Intent(Dangky.this, Login.class));
-                                    });
-                                }
-                                conn.close();
-                            } else {
-                                runOnUiThread(() ->
-                                        Toast.makeText(Dangky.this, "Kết nối thất bại!", Toast.LENGTH_SHORT).show()
-                                );
-                            }
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                            runOnUiThread(() ->
-                                    Toast.makeText(Dangky.this, "Lỗi: " + e.getMessage(), Toast.LENGTH_SHORT).show()
-                            );
-                        }
-                    }
-                }).start();
-
-
-            }
-        });
 
 
 

@@ -49,61 +49,33 @@ public class Quenmatkhau extends AppCompatActivity {
 
 
 
-        btn_quenmatkhauxacthuc.setOnClickListener(new View.OnClickListener() {
+        btn_quenmatkhauxacthuc.setOnClickListener(v -> {
+            String username = edt_quenmatkhaunhapusername.getText().toString().trim();
+            String sdt = edt_quenmatkhaunhapsdt.getText().toString().trim();
 
-            @Override
-            public void onClick(View v) {
-                String username = edt_quenmatkhaunhapusername.getText().toString().trim();
-                String sdt = edt_quenmatkhaunhapsdt.getText().toString().trim();
-                if(username.isEmpty() || sdt.isEmpty()){
-                    Toast.makeText(Quenmatkhau.this, "Vui lòng nhập đầy đủ thông tin", Toast.LENGTH_SHORT).show();
-                    return;
-
-                }
-
-
-                new Thread(new Runnable() {
-                    @Override
-                    public void run() {
-                        try {
-                            Connection conn = ConnectionClass.CONN();
-                            if (conn != null) {
-                                String query = "SELECT COUNT(*) FROM USE_PASSWORD WHERE USENAME=? AND SDT=?";
-                                PreparedStatement ps = conn.prepareStatement(query);
-                                ps.setString(1, username);
-                                ps.setString(2, sdt);
-                                ResultSet rs = ps.executeQuery();
-
-                                if (rs.next() && rs.getInt(1) > 0) {
-                                    runOnUiThread(() ->
-                                            Toast.makeText(Quenmatkhau.this, "Tài khoản hợp lệ!", Toast.LENGTH_SHORT).show()
-                                    );
-
-                                     Intent intent = new Intent(Quenmatkhau.this, Quenmatkhaunhaplaimatkhau.class);
-                                     intent.putExtra("USENAME", username); // truyền username qua Intent
-                                     startActivity(intent);
-
-                                } else {
-                                    runOnUiThread(() ->
-                                            Toast.makeText(Quenmatkhau.this, "Sai Username hoặc SĐT!", Toast.LENGTH_SHORT).show()
-                                    );
-                                }
-                                conn.close();
-                            } else {
-                                runOnUiThread(() ->
-                                        Toast.makeText(Quenmatkhau.this, "Kết nối thất bại", Toast.LENGTH_SHORT).show()
-                                );
-                            }
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                            runOnUiThread(() ->
-                                    Toast.makeText(Quenmatkhau.this, "Lỗi: " + e.getMessage(), Toast.LENGTH_SHORT).show()
-                            );
-                        }
-                    }
-                }).start();
+            if (username.isEmpty() || sdt.isEmpty()) {
+                Toast.makeText(Quenmatkhau.this, "Vui lòng nhập đầy đủ thông tin", Toast.LENGTH_SHORT).show();
+                return;
             }
+
+
+            new Thread(() -> {
+                AppDatabase db = AppDatabase.getInstance(getApplicationContext());
+                int count = db.userDao().checkUsernameAndPhone(username, sdt);
+
+                runOnUiThread(() -> {
+                    if (count > 0) {
+                        Toast.makeText(this, "Tài khoản hợp lệ!", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(this, Quenmatkhaunhaplaimatkhau.class);
+                        intent.putExtra("USENAME", username);
+                        startActivity(intent);
+                    } else {
+                        Toast.makeText(this, "Sai Username hoặc SĐT!", Toast.LENGTH_SHORT).show();
+                    }
+                });
+            }).start();
         });
+
 
 
 

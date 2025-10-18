@@ -1,25 +1,20 @@
 package com.example.duanlonmain.login;
 
+import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.text.InputType;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
-import android.content.Intent; // QUAN TRỌNG: Import Intent
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.duanlonmain.R;
 import com.example.duanlonmain.menu_Activity;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
+import java.util.concurrent.Executors;
 
 public class Login extends AppCompatActivity {
 
@@ -33,6 +28,8 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        // Ánh xạ view
         login = findViewById(R.id.btn_login);
         edtUsername = findViewById(R.id.edt_nhapusername_login);
         edtPassword = findViewById(R.id.edt_loginnhappassword);
@@ -40,104 +37,59 @@ public class Login extends AppCompatActivity {
         quenmatkhau = findViewById(R.id.txt_loginquenmatkhau);
         imgLoginshowpass = findViewById(R.id.img_loginshowpass);
 
-
-
-        taotailhoan.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Login.this, Dangky.class);
-                startActivity(intent);
-            }
+        // Chuyển sang màn tạo tài khoản
+        taotailhoan.setOnClickListener(v -> {
+            Intent intent = new Intent(Login.this, Dangky.class);
+            startActivity(intent);
         });
 
-
-
-
+        // Hiện / Ẩn mật khẩu
         imgLoginshowpass.setOnClickListener(v -> {
             if (isPasswordVisible) {
-                // Đang hiện → chuyển sang ẩn
                 edtPassword.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
-                imgLoginshowpass.setImageResource(R.drawable.baseline_remove_red_eye_24); // icon mắt đóng
+                imgLoginshowpass.setImageResource(R.drawable.baseline_remove_red_eye_24);
                 isPasswordVisible = false;
             } else {
-                // Đang ẩn → chuyển sang hiện
                 edtPassword.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
-                imgLoginshowpass.setImageResource(R.drawable.baseline_remove_red_eye_24); // icon mắt mở
+                imgLoginshowpass.setImageResource(R.drawable.baseline_remove_red_eye_24);
                 isPasswordVisible = true;
             }
-
-            // Giữ con trỏ ở cuối
             edtPassword.setSelection(edtPassword.getText().length());
         });
 
-
-
-
-        quenmatkhau.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Login.this, Quenmatkhau.class);
-                startActivity(intent);
-            }
+        // Quên mật khẩu
+        quenmatkhau.setOnClickListener(v -> {
+            Intent intent = new Intent(Login.this, Quenmatkhau.class);
+            startActivity(intent);
         });
 
+        // Nút đăng nhập
+        login.setOnClickListener(v -> {
+            String username = edtUsername.getText().toString().trim();
+            String password = edtPassword.getText().toString().trim();
 
+            if (username.isEmpty() || password.isEmpty()) {
+                Toast.makeText(Login.this, "Vui lòng nhập đầy đủ thông tin", Toast.LENGTH_SHORT).show();
+                return;
+            }
 
+            // Gọi Room DB trong luồng phụ
+            Executors.newSingleThreadExecutor().execute(() -> {
+                AppDatabase db = AppDatabase.getInstance(getApplicationContext());
+                UserDao userDao = db.userDao();
+                User user = userDao.login(username, password);
 
-
-
-        login.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String username = edtUsername.getText().toString().trim();
-                String password = edtPassword.getText().toString().trim();
-
-                if (username.isEmpty() || password.isEmpty()) {
-                    Toast.makeText(Login.this, "Vui lòng nhập đầy đủ thông tin", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-
-                new Thread(new Runnable() {
-                    @Override
-                    public void run() {
-                        try {
-                            Connection conn = ConnectionClass.CONN();
-                            if (conn != null) {
-                                String query = "SELECT COUNT(*) FROM USE_PASSWORD WHERE USENAME=? AND PASSWORD=?";
-                                PreparedStatement ps = conn.prepareStatement(query);
-                                ps.setString(1, username);
-                                ps.setString(2, password);
-                                ResultSet rs = ps.executeQuery();
-
-                                if (rs.next() && rs.getInt(1) > 0) {//getInt count xem co tai khoan nao ton tai ko
-                                    runOnUiThread(() ->
-                                            Toast.makeText(Login.this, "Đăng nhập thành công!", Toast.LENGTH_SHORT).show()
-                                    );
-                                    Intent intent = new Intent(Login.this, menu_Activity.class);
-                                    startActivity(intent);
-                                } else {
-                                    runOnUiThread(() ->
-                                            Toast.makeText(Login.this, "Sai Username hoặc Password!", Toast.LENGTH_SHORT).show()
-                                    );
-                                }
-                                conn.close();
-                            } else {
-                                runOnUiThread(() ->
-                                        Toast.makeText(Login.this, "Kết nối thất bại", Toast.LENGTH_SHORT).show()
-                                );
-                            }
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                            runOnUiThread(() ->
-                                    Toast.makeText(Login.this, "Lỗi: " + e.getMessage(), Toast.LENGTH_SHORT).show()
-                            );
-                        }
+                runOnUiThread(() -> {
+                    if (user != null) {
+                        Toast.makeText(Login.this, "Đăng nhập thành công!", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(Login.this, menu_Activity.class);
+                        startActivity(intent);
+                        finish();
+                    } else {
+                        Toast.makeText(Login.this, "Sai tài khoản hoặc mật khẩu!", Toast.LENGTH_SHORT).show();
                     }
-                }).start();
-            }
+                });
+            });
         });
-
-
-
     }
 }

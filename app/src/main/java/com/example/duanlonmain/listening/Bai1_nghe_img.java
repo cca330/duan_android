@@ -20,9 +20,9 @@ public class Bai1_nghe_img extends AppCompatActivity {
 
 
     RecyclerView recyclerQuestions;
-    ArrayList<Question> questions;
-    QuestionAdapter adapter;
-    ImageView btnNext, btnPrev;
+    ArrayList<Question_bai1> questions;
+    QuestionAdapter_bai1 adapter;
+    ImageView btnNext, btnPrev,btnBack;
 
     final int[] currentPosition = {0};
 
@@ -36,12 +36,19 @@ public class Bai1_nghe_img extends AppCompatActivity {
         recyclerQuestions = findViewById(R.id.recyclerQuestions);
         btnNext = findViewById(R.id.btnNext);
         btnPrev = findViewById(R.id.btnPrev);
+        btnBack = findViewById(R.id.btn_back);
+
+        btnBack.setOnClickListener(v -> {
+            adapter.stopCurrentAudio();
+            finish();
+        });
+
 
 
 
 
         questions = new ArrayList<>();
-        questions.add(new Question(
+        questions.add(new Question_bai1(
                 new String[]{"A", "B", "C", "D"},
                 1, // đáp án đúng là B
                 R.drawable.bai1_nghe,
@@ -53,7 +60,7 @@ public class Bai1_nghe_img extends AppCompatActivity {
                 1
         ));
 
-        questions.add(new Question(
+        questions.add(new Question_bai1(
                 new String[]{"A", "B", "C", "D"},
                 2,
                 R.drawable.bai2_nghe,
@@ -67,7 +74,7 @@ public class Bai1_nghe_img extends AppCompatActivity {
 
 
 
-        questions.add(new Question(
+        questions.add(new Question_bai1(
                 new String[]{"A", "B", "C", "D"},
                 1,
                 R.drawable.bai1_nghe,
@@ -79,7 +86,7 @@ public class Bai1_nghe_img extends AppCompatActivity {
                 3
         ));
 
-        questions.add(new Question(
+        questions.add(new Question_bai1(
                 new String[]{"A", "B", "C", "D"},
                 0,
                 R.drawable.bai2_nghe,
@@ -91,7 +98,7 @@ public class Bai1_nghe_img extends AppCompatActivity {
                 4
         ));
 
-        questions.add(new Question(
+        questions.add(new Question_bai1(
                 new String[]{"A", "B", "C", "D"},
                 3,
                 R.drawable.bai1_nghe,
@@ -103,7 +110,7 @@ public class Bai1_nghe_img extends AppCompatActivity {
                 5
         ));
 
-        questions.add(new Question(
+        questions.add(new Question_bai1(
                 new String[]{"A", "B", "C", "D"},
                 2,
                 R.drawable.bai2_nghe,
@@ -122,7 +129,7 @@ public class Bai1_nghe_img extends AppCompatActivity {
         recyclerQuestions.setLayoutManager(layoutManager);
 
 
-        adapter = new QuestionAdapter(this, questions);
+        adapter = new QuestionAdapter_bai1(this, questions);
         recyclerQuestions.setAdapter(adapter);
 
 
@@ -152,6 +159,8 @@ public class Bai1_nghe_img extends AppCompatActivity {
        // hiển thị 1 câu / trang
         SnapHelper snapHelper = new PagerSnapHelper();
         snapHelper.attachToRecyclerView(recyclerQuestions);
+
+
 
 
 

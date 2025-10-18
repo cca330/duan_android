@@ -41,6 +41,8 @@ public class Intro extends AppCompatActivity {
 
 
 
+
+
         viewPager = findViewById(R.id.viewpager);
         CircleIndicator indicator=findViewById(R.id.indicator);
 //        CircleIndicator = hiển thị chấm tròn chỉ vị trí.

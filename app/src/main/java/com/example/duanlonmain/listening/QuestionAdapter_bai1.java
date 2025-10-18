@@ -21,11 +21,11 @@ import org.checkerframework.checker.nullness.qual.NonNull;
 
 import java.util.ArrayList;
 
-public class QuestionAdapter extends RecyclerView.Adapter<QuestionAdapter.QuestionViewHolder> {
+public class QuestionAdapter_bai1 extends RecyclerView.Adapter<QuestionAdapter_bai1.QuestionViewHolder> {
 
     private Context context;
 
-    private ArrayList<Question> questions;
+    private ArrayList<Question_bai1> questions;
 
     // MediaPlayer chỉ chạy 1 bài
     private MediaPlayer mediaPlayer;
@@ -33,7 +33,7 @@ public class QuestionAdapter extends RecyclerView.Adapter<QuestionAdapter.Questi
     private Handler handler = new Handler();
 
     private int currentPlayingPosition = -1;
-    public QuestionAdapter(Context context, ArrayList<Question> questionList) {
+    public QuestionAdapter_bai1(Context context, ArrayList<Question_bai1> questionList) {
         this.context = context;
         this.questions = questionList;
     }
@@ -47,7 +47,7 @@ public class QuestionAdapter extends RecyclerView.Adapter<QuestionAdapter.Questi
 
     @Override
     public void onBindViewHolder(@NonNull QuestionViewHolder holder, int position) {
-        Question q = questions.get(position);
+        Question_bai1 q = questions.get(position);
 
         holder.imgQuestion.setImageResource(q.imageRes);
         holder.rb1.setText(q.options[0]);
