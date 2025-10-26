@@ -5,8 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".listening.Bai2_nghe_cauhoi_dapan"
-    android:background="@color/white2">
+    tools:context=".listening.Bai3_nghe_conversation">
 
 
     <LinearLayout
@@ -31,7 +30,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="Question and Response"
+            android:text="Short Conversation"
             android:textColor="@color/white"
             android:textStyle="bold"
             android:textSize="20dp" />
@@ -100,6 +99,5 @@
 
 
     </LinearLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

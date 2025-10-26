@@ -20,8 +20,7 @@ public class User {
     @ColumnInfo(name = "sdt")
     public String sdt;
 
-    @ColumnInfo(name = "email")
-    public String email; // có thể null
+
 
     @ColumnInfo(name = "created_at")
     public long createdAt;
@@ -40,18 +39,16 @@ public class User {
         this.username = username;
         this.password = passwordHashed;
         this.sdt = sdt;
-        this.email = null;
         this.createdAt = System.currentTimeMillis();
         this.role = "user";
         this.avatar = null;
     }
 
     // Optional: constructor đầy đủ
-    public User(String username, String passwordHashed, String sdt, String email, String role, String avatar) {
+    public User(String username, String passwordHashed, String sdt, String role, String avatar) {
         this.username = username;
         this.password = passwordHashed;
         this.sdt = sdt;
-        this.email = email;
         this.createdAt = System.currentTimeMillis();
         this.role = role == null ? "user" : role;
         this.avatar = avatar;

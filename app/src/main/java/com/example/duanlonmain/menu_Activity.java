@@ -9,6 +9,12 @@ import android.widget.GridView;
 
 import androidx.annotation.Nullable;
 
+import com.example.duanlonmain.noi_part1.noi_part1_cauHoi;
+import com.example.duanlonmain.noi_part2.noi_part2_cauHoi;
+import com.example.duanlonmain.noi_part3.noi_part3_cauHoi;
+import com.example.duanlonmain.noi_part4.noi_part4_cauHoi;
+import com.example.duanlonmain.noi_part5.noi_part5_cauHoi;
+
 import com.example.duanlonmain.listening.Bai1_nghe_img;
 import com.example.duanlonmain.reading.Reading_hoanthanhcau;
 import com.example.duanlonmain.vocabulary.Vocabulary;
@@ -31,12 +37,14 @@ public class menu_Activity extends Activity {
         ArrayList al_speaking = new ArrayList<menu_gridItem>();
         ArrayList al_writing = new ArrayList<menu_gridItem>();
 
-        al_listening.add(new menu_gridItem("@mipmap/ic_launcher", "Nghe hình ảnh", ""));
+        al_listening.add(new menu_gridItem("@mipmap/ic_launcher", "Part 1", ""));
+        al_listening.add(new menu_gridItem("@mipmap/ic_launcher", "Part 2", ""));
+        al_listening.add(new menu_gridItem("@mipmap/ic_launcher", "Part 3", ""));
+        al_listening.add(new menu_gridItem("@mipmap/ic_launcher", "Part 4", ""));
 
-
-        al_reading.add(new menu_gridItem("@mipmap/ic_launcher", "Từ vựng", ""));
-        al_reading.add(new menu_gridItem("@mipmap/ic_launcher", "Hoàn thành câu", ""));
-
+        al_reading.add(new menu_gridItem("@mipmap/ic_launcher", "Part 1", ""));
+        al_reading.add(new menu_gridItem("@mipmap/ic_launcher", "Part 2", ""));
+        al_reading.add(new menu_gridItem("@mipmap/ic_launcher", "Part 3", ""));
 
         al_speaking.add(new menu_gridItem("@mipmap/ic_launcher", "Part 1", ""));
         al_speaking.add(new menu_gridItem("@mipmap/ic_launcher", "Part 2", ""));
@@ -58,9 +66,31 @@ public class menu_Activity extends Activity {
         gv_speaking.setAdapter(adapter_speaking);
         gv_writing.setAdapter(adapter_writing);
 
+        gv_speaking.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = null;
+                switch (position){
+                    case 0:
+                        intent = new Intent(menu_Activity.this, noi_part1_cauHoi.class);
+                        break;
+                    case 1:
+                        intent = new Intent(menu_Activity.this, noi_part2_cauHoi.class);
+                        break;
+                    case 2:
+                        intent = new Intent(menu_Activity.this, noi_part3_cauHoi.class);
+                        break;
+                    case 3:
+                        intent = new Intent(menu_Activity.this, noi_part4_cauHoi.class);
+                        break;
+                    case 4:
+                        intent = new Intent(menu_Activity.this, noi_part5_cauHoi.class);
+                        break;
 
-
-
+                }
+                if (intent != null) startActivity(intent);
+            }
+        });
 
 
         gv_listening.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -81,35 +111,28 @@ public class menu_Activity extends Activity {
 
 
 
-
-
         gv_reading.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = null;
                 switch (position){
                     case 0:
-                        intent = new Intent(menu_Activity.this, Vocabulary.class);
+                        intent = new Intent(menu_Activity.this, Reading_hoanthanhcau.class);
+                        break;
 
                     case 1:
-                        intent = new Intent(menu_Activity.this, Reading_hoanthanhcau.class);
+                        intent = new Intent(menu_Activity.this, Vocabulary.class);
                         break;
                 }
                 if (intent != null) startActivity(intent);
             }
         });
 
-
-
-
-
-
-
-
-
-
-
-
 }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        db_Insert.dbCreate(getApplicationContext());
+    }
 }
