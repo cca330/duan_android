@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/advanced_card">
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Quay lại"
+        app:srcCompat="@drawable/angle_left_regular_full"
+        android:elevation="8dp"/>
+
+    <View
+        android:id="@+id/brisk_walki"
+        android:layout_width="match_parent"
+        android:layout_height="345dp"
+        android:background="@drawable/aventure" />
+
+    <RelativeLayout
+        android:id="@+id/grammar"
+        android:layout_width="328dp"
+        android:layout_height="64dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="303dp"
+        android:background="@drawable/title"
+        android:elevation="16dp"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/gram"
+            android:layout_width="200dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="-1dp"
+            android:layout_toRightOf="@+id/imggram"
+            android:lineSpacingExtra="9sp"
+            android:text="@string/grammar"
+            android:textAppearance="@style/Grammar"
+            android:translationY="-4.45sp" />
+
+        <RelativeLayout
+            android:id="@+id/imggram"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/grammar"
+            android:clipToOutline="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="328dp"
+        android:layout_height="64dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="383dp"
+        android:background="@drawable/title"
+        android:elevation="16dp"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/nothing"
+            android:layout_width="200dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="-1dp"
+            android:layout_toRightOf="@+id/img"
+            android:lineSpacingExtra="9sp"
+            android:text="thêm"
+            android:textAppearance="@style/Grammar"
+            android:translationY="-4.45sp" />
+
+        <RelativeLayout
+            android:id="@+id/img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/grammar"
+            android:clipToOutline="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/title1"
+        android:layout_width="328dp"
+        android:layout_height="64dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="463dp"
+        android:background="@drawable/title"
+        android:elevation="16dp"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/nothing1"
+            android:layout_width="200dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="-1dp"
+            android:layout_toRightOf="@+id/imgno"
+            android:lineSpacingExtra="9sp"
+            android:text="thêm"
+            android:textAppearance="@style/Grammar"
+            android:translationY="-4.45sp" />
+
+        <RelativeLayout
+            android:id="@+id/imgno"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/grammar"
+            android:clipToOutline="true" />
+    </RelativeLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="406dp"
+        android:layout_height="82dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="-1dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/tab_home_ha"
+        android:elevation="20dp"
+        app:menu="@menu/bottom_nav" />
+
+    <!-- drawable/tab_item.xml -->
+
+
+</RelativeLayout>

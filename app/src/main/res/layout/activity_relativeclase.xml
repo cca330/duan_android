@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/colortest"
+    android:orientation="vertical"
+    >
+
+    <!-- HEADER -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center_vertical"
+       >
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Quay lại"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/angle_left_regular_full" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Relative clause"
+            android:textColor="@color/purpl3"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/btn_back"
+            app:layout_constraintStart_toEndOf="@id/btn_back"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <!-- 1. Khái niệm -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="12dp"
+                android:text="1. Khái niệm"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="Mệnh đề quan hệ là mệnh đề phụ dùng để bổ nghĩa cho danh từ hoặc đại từ đứng trước nó (gọi là antecedent). Nó giúp nối hai câu lại với nhau, tránh lặp từ và làm câu rõ nghĩa hơn.\n\nVí dụ:\nThe man who lives next door is a doctor.\n→ “who lives next door” là mệnh đề quan hệ, bổ nghĩa cho “the man”."
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <!-- 2. Cấu trúc chung -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="12dp"
+                android:text="2. Cấu trúc chung"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="Danh từ / Đại từ được bổ nghĩa + Đại từ quan hệ / Trạng từ quan hệ + Mệnh đề\n\nVí dụ:\nThe book which is on the table is mine."
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <!-- 3. Đại từ quan hệ -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="4dp"
+                android:text="3. Đại từ quan hệ (Relative Pronouns)"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#DDDDDD"
+                android:padding="4dp"
+                android:stretchColumns="1,2">
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="4dp"
+                        android:text="Đại từ"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:padding="4dp"
+                        android:text="Dùng cho"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:padding="4dp"
+                        android:text="Ví dụ"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="4dp"
+                        android:text="who"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:padding="4dp"
+                        android:text="người (chủ ngữ)"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:padding="4dp"
+                        android:text="The student who studies hard will succeed."
+                        android:textColor="#000000" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="4dp"
+                        android:text="whom"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:padding="4dp"
+                        android:text="người (tân ngữ)"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:padding="4dp"
+                        android:text="The man whom we met is my uncle."
+                        android:textColor="#000000" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="4dp"
+                        android:text="which"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:padding="4dp"
+                        android:text="vật, động vật"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:padding="4dp"
+                        android:text="The car which is new is very fast."
+                        android:textColor="#000000" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="4dp"
+                        android:text="that"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:padding="4dp"
+                        android:text="người / vật"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:padding="4dp"
+                        android:text="The book that you read is interesting."
+                        android:textColor="#000000" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="4dp"
+                        android:text="whose"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:padding="4dp"
+                        android:text="sở hữu"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:padding="4dp"
+                        android:text="The girl whose father is a pilot is my friend."
+                        android:textColor="#000000" />
+                </TableRow>
+            </TableLayout>
+
+            <!-- 4. Trạng từ quan hệ -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="4dp"
+                android:text="\n4. Trạng từ quan hệ (Relative Adverbs)"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#DDDDDD"
+                android:padding="4dp"
+                android:stretchColumns="1,2">
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="4dp"
+                        android:text="Trạng từ"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:padding="4dp"
+                        android:text="Nghĩa"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:padding="4dp"
+                        android:text="Ví dụ"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="4dp"
+                        android:text="where"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:padding="4dp"
+                        android:text="nơi chốn"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:padding="4dp"
+                        android:text="The house where I was born is old."
+                        android:textColor="#000000" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="4dp"
+                        android:text="when"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:padding="4dp"
+                        android:text="thời gian"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:padding="4dp"
+                        android:text="The day when we met was unforgettable."
+                        android:textColor="#000000" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="4dp"
+                        android:text="why"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:padding="4dp"
+                        android:text="lý do"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:padding="4dp"
+                        android:text="The reason why I’m late is the traffic."
+                        android:textColor="#000000" />
+                </TableRow>
+            </TableLayout>
+
+            <!-- Các phần còn lại -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="12dp"
+                android:text="5. Các loại mệnh đề quan hệ"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:text="• Mệnh đề xác định: không có dấu phẩy, xác định danh từ rõ ràng.\nVí dụ: The boy who is playing football is my brother.\n\n• Mệnh đề không xác định: có dấu phẩy, chỉ bổ sung thông tin.\nVí dụ: My father, who is 50 years old, loves gardening."
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="12dp"
+                android:text="6. Cách rút gọn mệnh đề quan hệ"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:text="- Dạng V-ing: The man standing over there is my father.\n- Dạng V3/P.P: The documents sent yesterday are important.\n- Dạng to-V: He was the first man to enter the room."
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="12dp"
+                android:text="7. Khi dùng “that” thay cho “who/which”"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:text="Sau so sánh nhất, the only, the first, các đại từ bất định...\nVí dụ: This is the best movie that I’ve ever seen."
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="12dp"
+                android:text="8. Khi lược bỏ đại từ quan hệ"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:text="Chỉ khi đại từ làm tân ngữ.\nVí dụ: The book (that) I bought yesterday is new."
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="12dp"
+                android:text="9. Một số lỗi thường gặp"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:text="❌ The car who is red is mine. → \n✅ The car which is red is mine.\n❌ The man, who works here, is my friend. → \n✅ The man who works here is my friend."
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="12dp"
+                android:text="10. Tóm tắt ngắn gọn"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:paddingBottom="16dp"
+                android:text="Who → người (chủ ngữ)\nWhom → người (tân ngữ)\nWhich → vật\nThat → người/vật\nWhose → sở hữu\nWhere → nơi chốn\nWhen → thời gian\nWhy → lý do\nCó thể rút gọn bằng V-ing, P.P, hoặc to-V\nCó thể bỏ đại từ nếu là tân ngữ."
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/colortest"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/btn_back"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="Quay lại"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/angle_left_regular_full" />
+
+            <!-- Tiêu đề -->
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:text="IV. Structure popular"
+                android:textColor="@color/purpl3"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/btn_back"
+                app:layout_constraintTop_toTopOf="@id/btn_back" />
+        </LinearLayout>
+        <!-- IV -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:text="IV. CẤU TRÚC NGỮ PHÁP THÔNG DỤNG TRONG TIẾNG ANH"
+            android:textColor="#5E35B1"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <!-- 1 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="1. Cấu trúc với “It”"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="• It + to be + adj + to V / that + clause\n→ Dùng để diễn tả cảm xúc, đánh giá, hoặc quan điểm.\nVí dụ:\nIt is easy to learn English.\nIt is important that you arrive on time.\n\n• It takes/took + (sb) + time + to V\n→ Diễn tả mất bao lâu để làm gì.\nVí dụ:\nIt takes me 30 minutes to go to school.\nIt took her 2 hours to finish the report.\n\n• It is said that + clause / People say that + clause\n→ Dùng trong câu bị động khi người nói không xác định.\nVí dụ:\nIt is said that he is rich. = People say that he is rich."
+
+            android:textSize="16sp" />
+
+        <!-- 2 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="2. Cấu trúc với “There is / There are”"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="→ Dùng để nói về sự tồn tại hoặc sự có mặt của người/vật.\nCấu trúc:\nThere is + singular noun / uncountable noun\nThere are + plural noun\nVí dụ:\nThere is a book on the table.\nThere are many students in the classroom.\n\nPhủ định:\nThere isn’t any milk left.\nThere aren’t any chairs in the room.\n\nNghi vấn:\nIs there a pen on the desk?\nAre there any apples in the fridge?"
+            android:textSize="16sp" />
+
+        <!-- 3 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="3. Cấu trúc so sánh"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="• So sánh bằng: S + be/V + as + adj/adv + as + N/pronoun\n→ Dùng để so sánh hai thứ ngang nhau.\nVí dụ:\nShe is as tall as her sister.\nThis book is as interesting as that one.\nHe isn’t as rich as his friend.\n\n• So sánh hơn: S + be/V + adj/adv + er + than + N/pronoun\nHoặc: more + adj dài + than\nVí dụ:\nThis car is faster than that one.\nShe is more beautiful than her cousin.\n\n• So sánh nhất: S + be/V + the + adj/adv + est\nHoặc: the most + adj dài\nVí dụ:\nHe is the tallest boy in the class.\nThis is the most expensive phone here."
+            android:textSize="16sp" />
+
+        <!-- 4 -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="4. Cấu trúc câu điều kiện (Conditional Sentences)"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="• Loại 1: If + S + V (hiện tại đơn), S + will/can/may + V\n→ Điều kiện có thể xảy ra trong hiện tại hoặc tương lai.\nVí dụ: If it rains, we will stay at home.\n\n• Loại 2: If + S + V (quá khứ đơn), S + would/could + V\n→ Giả định điều không có thật ở hiện tại.\nVí dụ: If I were rich, I would travel around the world.\n\n• Loại 3: If + S + had + V3, S + would/could + have + V3\n→ Giả định điều không có thật trong quá khứ.\nVí dụ: If I had known, I would have helped you."
+            android:textSize="16sp" />
+
+        <!-- 5 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="5. Cấu trúc câu bị động (Passive Voice)"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="Cấu trúc: S + be + V3/V-ed (+ by O)\n→ 'Be' chia theo thì.\nVí dụ:\nThe book is read by many students.\nThe room was cleaned yesterday.\nThe homework will be done tomorrow."
+            android:textSize="16sp" />
+
+        <!-- 6. Câu gián tiếp -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="6. Cấu trúc câu gián tiếp (Reported Speech)\n\nCâu trực tiếp: She said, “I am tired.”\nCâu gián tiếp: She said (that) she was tired.\n\nQuy tắc lùi thì:"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <!-- Table: Quy tắc lùi thì -->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ECECEC"
+            android:padding="4dp"
+            android:stretchColumns="1">
+
+            <TableRow>
+
+                <TextView
+                    android:padding="4dp"
+                    android:text="Câu trực tiếp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:padding="4dp"
+                    android:text="Câu gián tiếp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="4dp"
+                    android:text="am/is" />
+
+                <TextView
+                    android:padding="4dp"
+                    android:text="was" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="4dp"
+                    android:text="are" />
+
+                <TextView
+                    android:padding="4dp"
+                    android:text="were" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="4dp"
+                    android:text="will" />
+
+                <TextView
+                    android:padding="4dp"
+                    android:text="would" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="4dp"
+                    android:text="can" />
+
+                <TextView
+                    android:padding="4dp"
+                    android:text="could" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="4dp"
+                    android:text="may" />
+
+                <TextView
+                    android:padding="4dp"
+                    android:text="might" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="4dp"
+                    android:text="have/has" />
+
+                <TextView
+                    android:padding="4dp"
+                    android:text="had" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="4dp"
+                    android:text="must" />
+
+                <TextView
+                    android:padding="4dp"
+                    android:text="had to" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="\nThay đổi đại từ và trạng từ:"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <!-- Table: Đại từ -->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ECECEC"
+            android:padding="4dp"
+            android:stretchColumns="1">
+
+            <TableRow>
+
+                <TextView
+                    android:padding="4dp"
+                    android:text="Trực tiếp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:padding="4dp"
+                    android:text="Gián tiếp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="4dp"
+                    android:text="I" />
+
+                <TextView
+                    android:padding="4dp"
+                    android:text="he/she" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="4dp"
+                    android:text="we" />
+
+                <TextView
+                    android:padding="4dp"
+                    android:text="they" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="4dp"
+                    android:text="today" />
+
+                <TextView
+                    android:padding="4dp"
+                    android:text="that day" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="4dp"
+                    android:text="tomorrow" />
+
+                <TextView
+                    android:padding="4dp"
+                    android:text="the next day" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="4dp"
+                    android:text="yesterday" />
+
+                <TextView
+                    android:padding="4dp"
+                    android:text="the day before" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:text="\nVí dụ:\nHe said, “I will call you tomorrow.”\n→ He said that he would call me the next day."
+            android:textSize="16sp" />
+
+        <!-- 7–12 giữ nguyên như trước (bỏ qua để ngắn gọn) -->
+        <!-- 7 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="7. Cấu trúc với “Wish”"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:text="a. Wish ở hiện tại (điều ước trái với hiện tại)\nS + wish + S + V (quá khứ đơn)\nVí dụ:\nI wish I had a car. (Ước gì tôi có xe hơi.)\n\nb. Wish ở quá khứ (điều ước trái với quá khứ)\nS + wish + S + had + V3\nVí dụ:\nI wish I had studied harder.\n\nc. Wish ở tương lai (điều ước trái với tương lai)\nS + wish + S + would + V\nVí dụ:\nI wish it would stop raining."
+            android:textSize="16sp" />
+
+        <!-- 8 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="8. Cấu trúc câu giả định (Subjunctive Mood)"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:text="Dùng sau một số động từ hoặc tính từ để thể hiện yêu cầu, đề nghị, mong muốn:\nS + V + that + S + (should) + V (bare)\nMột số động từ thường dùng: suggest, recommend, demand, insist, request,...\nVí dụ:\nI suggest that he study harder.\nThe teacher insisted that we (should) be on time."
+            android:textSize="16sp" />
+
+        <!-- 9 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="9. Cấu trúc nhấn mạnh (Cleft Sentences)"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:text="It is/was + thành phần được nhấn mạnh + that/who + phần còn lại.\nVí dụ:\nIt was Tom who broke the window.\nIt is the weather that makes me tired."
+            android:textSize="16sp" />
+
+        <!-- 10 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="10. Cấu trúc “too ... to / enough to / so ... that / such ... that”"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:text="a. Too ... to: Quá ... đến nỗi không thể\nHe is too young to drive.\n\nb. Enough to: Đủ ... để\nShe is old enough to work.\n\nc. So ... that: Quá ... đến nỗi mà\nHe ran so fast that I couldn’t catch him.\n\nd. Such ... that: Quá ... đến nỗi mà\nIt was such a nice day that we went out."
+            android:textSize="16sp" />
+
+        <!-- 11 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="11. Cấu trúc “Prefer / Would rather / Like”"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:text="Prefer + N/V-ing + to + N/V-ing\n→ I prefer coffee to tea.\n\nWould rather + V (bare) + than + V (bare)\n→ I would rather stay home than go out.\n\nLike + V-ing / to V: thích làm gì\n→ I like reading / I like to read."
+            android:textSize="16sp" />
+
+        <!-- 12 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="12. Cấu trúc nhấn mạnh sự bắt buộc / cần thiết"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:text="Have to / Must + V: phải làm gì\n→ You must wear a helmet.\n\nBe supposed to + V: được cho là nên\n→ You are supposed to finish this today.\n\nNeed to + V: cần làm gì\n→ I need to go now."
+            android:textSize="16sp" />
+
+        <!-- 13. Động từ khuyết thiếu -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="13. Cấu trúc với động từ khuyết thiếu (Modal Verbs)"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <!-- Table: Modal verbs -->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ECECEC"
+            android:padding="4dp"
+            android:stretchColumns="2">
+
+            <TableRow>
+
+                <TextView
+                    android:padding="4dp"
+                    android:text="Động từ"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:padding="4dp"
+                    android:text="Nghĩa"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:padding="4dp"
+                    android:text="Ví dụ"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="4dp"
+                    android:text="Can / Could" />
+
+                <TextView
+                    android:padding="4dp"
+                    android:text="Có thể" />
+
+                <TextView
+                    android:padding="4dp"
+                    android:text="I can swim." />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="4dp"
+                    android:text="May / Might" />
+
+                <TextView
+                    android:padding="4dp"
+                    android:text="Có thể (khả năng thấp hơn)" />
+
+                <TextView
+                    android:padding="4dp"
+                    android:text="It may rain." />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="4dp"
+                    android:text="Must" />
+
+                <TextView
+                    android:padding="4dp"
+                    android:text="Phải" />
+
+                <TextView
+                    android:padding="4dp"
+                    android:text="You must stop here." />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="4dp"
+                    android:text="Shall / Should" />
+
+                <TextView
+                    android:padding="4dp"
+                    android:text="Nên" />
+
+                <TextView
+                    android:padding="4dp"
+                    android:text="You should study." />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="4dp"
+                    android:text="Will / Would" />
+
+                <TextView
+                    android:padding="4dp"
+                    android:text="Sẽ / Sẽ (giả định)" />
+
+                <TextView
+                    android:padding="4dp"
+                    android:text="I will help you." />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="4dp"
+                    android:text="Ought to" />
+
+                <TextView
+                    android:padding="4dp"
+                    android:text="Nên" />
+
+                <TextView
+                    android:padding="4dp"
+                    android:text="You ought to be careful." />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="4dp"
+                    android:text="Had better" />
+
+                <TextView
+                    android:padding="4dp"
+                    android:text="Tốt hơn nên" />
+
+                <TextView
+                    android:padding="4dp"
+                    android:text="You had better sleep early." />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>

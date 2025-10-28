@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/colortest"
+    android:orientation="vertical">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Quay lại"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/angle_left_regular_full" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Noun - Adjective - Adverb"
+            android:textColor="@color/purpl3"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/btn_back"
+            app:layout_constraintStart_toEndOf="@id/btn_back"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+    <!-- Nội dung chính có thể cuộn -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- I. DANH TỪ -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="12dp"
+                android:text="I. DANH TỪ (NOUN)"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:text="1. Định nghĩa"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:text="Danh từ là từ dùng để chỉ người, vật, địa điểm, hiện tượng, khái niệm, hay ý tưởng.\nVí dụ: book, teacher, love, happiness, London."
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\n2. Các loại danh từ"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:text="a. Danh từ chung (Common noun): girl, dog, city, car.\n\nb. Danh từ riêng (Proper noun): Mary, Vietnam, Google.\n\nc. Danh từ đếm được (Countable noun): a cat → two cats.\n\nd. Danh từ không đếm được (Uncountable noun): water, milk.\n\ne. Danh từ trừu tượng (Abstract noun): love, freedom, happiness.\n\nf. Danh từ tập hợp (Collective noun): team, family.\n\ng. Danh từ ghép (Compound noun): toothpaste, bedroom, bus stop."
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:text="\n3. Ví dụ\n• People need water to live.\n• My family lives in Hanoi.\n• She gave me a piece of advice.\n• The class is very noisy today."
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+
+            <!-- II. TÍNH TỪ -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:text="\nII. TÍNH TỪ (ADJECTIVE)"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:text="1. Định nghĩa\nTính từ là từ dùng để miêu tả tính chất, trạng thái, màu sắc, kích thước, hình dạng, số lượng,… của danh từ hoặc đại từ."
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:text="\n2. Các loại tính từ\n- Miêu tả (Descriptive): tall, short, happy.\n- Chỉ số lượng (Quantitative): some, many.\n- Sở hữu (Possessive): my, your, his.\n- Chỉ định (Demonstrative): this, those.\n- Nghi vấn (Interrogative): which, what.\n- Phân phối (Distributive): each, every."
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:text="\n3. Vị trí trong câu\n- Trước danh từ: a beautiful girl\n- Sau to be: She is beautiful."
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:text="\n4. Ví dụ\nThe red dress looks nice.\nHe is tall and handsome.\nMy teacher is very kind."
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+
+            <!-- III. TRẠNG TỪ -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:text="\nIII. TRẠNG TỪ (ADVERB)"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:text="1. Định nghĩa\nTrạng từ bổ nghĩa cho động từ, tính từ, hoặc cả câu. Trả lời: How? When? Where? How often? To what extent?"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:text="\n2. Các loại trạng từ\n- Cách thức (manner): quickly, slowly.\n- Thời gian (time): now, yesterday.\n- Nơi chốn (place): here, there.\n- Tần suất (frequency): always, never.\n- Mức độ (degree): very, too.\n- Xác suất (probability): probably, maybe.\n- Nghi vấn (interrogative): how, when, where.\n- Liên kết (conjunctive): however, therefore."
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:text="\n3. Vị trí trong câu\n- Trước động từ thường: She always studies.\n- Sau to be: He is always late.\n- Cuối câu: She sings beautifully."
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:text="\n4. Ví dụ\nShe speaks English fluently.\nThey often go to the gym.\nHe runs very quickly.\nWe met yesterday at the park."
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <!-- Nút quay lại -->
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="#1976D2"
+                android:paddingHorizontal="24dp"
+                android:text="Quay lại"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

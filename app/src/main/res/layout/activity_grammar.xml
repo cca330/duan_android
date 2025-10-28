@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/colortest"
+    android:padding="16dp">
+
+    <!-- Header -->
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Quay lại"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/angle_left_regular_full" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Grammar"
+        android:textColor="@color/purpl3"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/btn_back"
+        app:layout_constraintStart_toEndOf="@id/btn_back"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!-- GridLayout cho 7 ImageButton -->
+    <GridLayout
+        android:id="@+id/grid_grammar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:alignmentMode="alignBounds"
+        android:columnCount="2"
+        android:columnOrderPreserved="true"
+        android:rowCount="4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title">
+
+        <!-- Từ loại (Parts of Speech) -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:background="@drawable/duongvien"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageButton
+                android:id="@+id/btn_parts_of_speech"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/duongvien"
+                android:contentDescription="Học về từ loại"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/pngtreeoffice_label_file_icon_4462569" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Part of speech"
+                android:textColor="@color/purpl3"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Các thì trong tiếng Anh (Tenses) -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:background="@drawable/duongvien"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btn_tenses"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/duongvien"
+                android:contentDescription="Học về các thì trong tiếng Anh"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/pngtreeoffice_label_file_icon_4462569" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Tense"
+                android:textColor="@color/purpl3"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:background="@drawable/duongvien"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btn_sentence_structure"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/duongvien"
+                android:contentDescription="Học về cấu trúc câu"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/pngtreeoffice_label_file_icon_4462569" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Sentence Structure"
+                android:textColor="@color/purpl3"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Cấu trúc ngữ pháp thông dụng -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:background="@drawable/duongvien"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btn_sentense"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/duongvien"
+                android:contentDescription="Học về cấu trúc ngữ pháp thông dụng"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/pngtreeoffice_label_file_icon_4462569" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Sentense porpular"
+                android:textColor="@color/purpl3"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Động từ đặc biệt -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:background="@drawable/duongvien"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btn_special_verbs"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/duongvien"
+                android:contentDescription="Học về động từ đặc biệt"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/pngtreeoffice_label_file_icon_4462569" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Type of verbs"
+                android:textColor="@color/purpl3"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Danh từ, Tính từ, Trạng từ -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:background="@drawable/duongvien"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btn_noun_adj_adv"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/duongvien"
+                android:contentDescription="Học về danh từ, tính từ, trạng từ"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/pngtreeoffice_label_file_icon_4462569" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:text="Noun, Adjective, Adverb"
+                android:textColor="@color/purpl3"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:background="@drawable/duongvien"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btn_relative_clause"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/duongvien"
+                android:contentDescription="Học về mệnh đề và các cấu trúc khác"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/pngtreeoffice_label_file_icon_4462569" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Relative clause"
+                android:textColor="@color/purpl3"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

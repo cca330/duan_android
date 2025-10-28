@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="340dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    app:cardCornerRadius="24dp"
+    app:cardElevation="12dp"
+    android:layout_margin="24dp"
+    android:backgroundTint="#FFFFFF">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Quay lại"
+            app:srcCompat="@drawable/angle_left_regular_full" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="28dp"
+        android:gravity="center">
+
+        <!-- Tiêu đề -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kết quả bài viết"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#1A1A1A"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Progress Circle + Score -->
+        <FrameLayout
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginBottom="20dp">
+
+            <!-- Vòng tròn gradient -->
+            <ProgressBar
+                android:id="@+id/progress_circle"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:max="100"
+                android:progress="92"
+                android:progressDrawable="@drawable/circle_progress"
+                android:layout_gravity="center" />
+
+            <!-- Điểm số -->
+            <TextView
+                android:id="@+id/tv_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="92"
+                android:textSize="42sp"
+                android:textStyle="bold"
+                android:textColor="#4CAF50"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/100"
+                android:textSize="18sp"
+                android:textColor="#888"
+                android:layout_gravity="center"
+                android:layout_marginTop="48dp" />
+        </FrameLayout>
+
+        <!-- Feedback -->
+        <TextView
+            android:id="@+id/tv_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tuyệt vời! Bạn đã viết mạch lạc và dùng từ vựng phong phú."
+            android:textSize="16sp"
+            android:textColor="#2e7d32"
+            android:background="#E8F5E9"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center" />
+
+        <!-- Bản sửa lỗi -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bản sửa lỗi:"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tv_corrected"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My best friend is Anna. She lives in Hanoi..."
+            android:textSize="15sp"
+            android:background="#F5F5F5"
+            android:padding="12dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Nút -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_retry"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="Viết lại"
+                app:strokeColor="#666"
+                android:layout_marginEnd="8dp" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_next"                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="Tiếp theo"
+                app:strokeColor="#666"
+                android:backgroundTint="#4CAF50"
+                android:layout_marginStart="8dp" />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

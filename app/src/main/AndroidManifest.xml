@@ -20,6 +20,33 @@
         android:theme="@style/Theme.Duanlonmain">
 
 
+        <activity android:name=".user.ProfileActivity"
+            android:exported="true" />
+        <activity android:name=".extend.ExtendActivity"
+            android:exported="true" />
+        <activity android:name=".extend.Grammar.GrammarActivity"
+            android:exported="true" />
+        <activity android:name=".extend.Grammar.TenseActivity"
+            android:exported="true" />
+        <activity android:name=".extend.Grammar.Typeofverb_Activity"
+            android:exported="true" />
+      <activity android:name=".MainActivity"
+            android:exported="true" >
+          <intent-filter>
+              <action android:name="android.intent.action.MAIN" />
+
+              <category android:name="android.intent.category.LAUNCHER" />
+          </intent-filter>
+      </activity>
+        <activity android:name=".writing.MainWriting"
+            android:exported="true" >
+
+        </activity>
+        <activity android:name=".writing.ui.exercise.WritingExerciseActivity"
+            android:exported="true" />
+        <activity android:name=".writing.ui.result.WritingResultActivity"
+            android:exported="true" />
+
         <activity
             android:name=".noi_part1.noi_part1_cauHoi"
             android:exported="true">
@@ -69,11 +96,7 @@
         <activity
             android:name=".menu_Activity"
             android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
 

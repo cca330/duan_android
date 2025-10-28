@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/colortest"
+    android:orientation="vertical">
+
+    <!-- HEADER -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Quay lại"
+            app:srcCompat="@drawable/angle_left_regular_full" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Types of Verbs"
+            android:textColor="@color/purpl3"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- CONTENT -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <!-- 1. Khái niệm -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Khái niệm về động từ (Verb)"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Động từ là từ dùng để diễn tả hành động, trạng thái hoặc cảm xúc của chủ ngữ.\n\nVí dụ:\nShe runs every morning.\nHe is a teacher.\nI feel happy."
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:paddingBottom="12dp" />
+
+            <!-- 2. Phân loại theo chức năng -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. Phân loại theo chức năng ngữ pháp"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="- Động từ chính (Main Verb)\nShe studies English.\n\n- Trợ động từ (Auxiliary Verb)\nShe is studying now.\n\n- Động từ khuyết thiếu (Modal Verb)\nYou must study hard."
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:paddingBottom="12dp" />
+
+            <!-- 3. Phân loại theo tân ngữ -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3. Phân loại theo tân ngữ"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="- Nội động từ (Intransitive): He arrived late.\n- Ngoại động từ (Transitive): He bought a car.\n- Vừa nội vừa ngoại (Ambitransitive): She reads / She reads books."
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:paddingBottom="12dp" />
+
+            <!-- 4. Phân loại theo ý nghĩa -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4. Phân loại theo ý nghĩa"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="- Động từ hành động (Action): She runs fast.\n- Động từ chỉ trạng thái (Stative): She loves music."
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:paddingBottom="12dp" />
+
+            <!-- 5. Phân loại theo hình thức -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5. Phân loại theo hình thức"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#DDDDDD"
+                android:padding="4dp"
+                android:stretchColumns="1,2">
+
+                <TableRow>
+                    <TextView android:text="Loại" android:textStyle="bold" android:padding="4dp" android:textColor="#000000"/>
+                    <TextView android:text="Đặc điểm" android:textStyle="bold" android:padding="4dp" android:textColor="#000000"/>
+                    <TextView android:text="Ví dụ" android:textStyle="bold" android:padding="4dp" android:textColor="#000000"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:text="Regular" android:padding="4dp" android:textColor="#000000"/>
+                    <TextView android:text="Thêm -ed ở thì quá khứ" android:padding="4dp" android:textColor="#000000"/>
+                    <TextView android:text="play → played" android:padding="4dp" android:textColor="#000000"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:text="Irregular" android:padding="4dp" android:textColor="#000000"/>
+                    <TextView android:text="Bất quy tắc khi chia thì" android:padding="4dp" android:textColor="#000000"/>
+                    <TextView android:text="go → went → gone" android:padding="4dp" android:textColor="#000000"/>
+                </TableRow>
+            </TableLayout>
+
+            <!-- 6. Linking Verb -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\n6. Động từ nối (Linking Verb)"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="be, seem, become, look, appear, feel...\nVí dụ: She is beautiful. / He seems tired."
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:paddingBottom="12dp" />
+
+            <!-- 7. Phrasal Verb -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="7. Động từ cụm (Phrasal Verb)"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="look after (chăm sóc)\nturn on (bật)\ngive up (từ bỏ)\nlook for (tìm kiếm)"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:paddingBottom="12dp" />
+
+            <!-- 8. Tóm tắt -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="8. Tóm tắt ngắn gọn"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Theo chức năng: Main / Auxiliary / Modal\nTheo tân ngữ: Transitive / Intransitive\nTheo ý nghĩa: Action / Stative\nTheo hình thức: Regular / Irregular\nĐặc biệt: Linking / Phrasal"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:paddingBottom="16dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/colortest"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Header: Nút quay lại + Tiêu đề -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Quay lại"
+            app:srcCompat="@drawable/angle_left_regular_full" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Sentence Structure"
+            android:textColor="@color/purpl3"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Nội dung chính -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Tiêu đề chính -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="16dp"
+                android:text="CẤU TRÚC CÂU TRONG TIẾNG ANH"
+                android:textColor="@color/purple"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <!-- I. Khái niệm -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="8dp"
+                android:text="I. Khái niệm về cấu trúc câu"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cấu trúc câu (sentence structure) là cách sắp xếp các thành phần trong câu (chủ ngữ, vị ngữ, tân ngữ, bổ ngữ, trạng ngữ, v.v.) để tạo nên một câu hoàn chỉnh về ngữ pháp và ý nghĩa.\n\nMột câu tiếng Anh thông thường luôn phải có ít nhất một chủ ngữ (Subject) và một vị ngữ (Predicate)."
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="4dp"
+                android:text="Ví dụ:\nShe sings. (Cô ấy hát.)\n→ “She” là chủ ngữ, “sings” là vị ngữ."
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <!-- II. Thành phần chính -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="8dp"
+                android:text="II. Các thành phần chính trong câu"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <!-- Thành phần chi tiết -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="1. Chủ ngữ (Subject)\n\nLà người hoặc vật thực hiện hành động trong câu. Thường là danh từ, cụm danh từ hoặc đại từ.\n\nVí dụ:\nThe boy plays football.\nIt is raining."
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="2. Vị ngữ (Predicate)\n\nLà phần còn lại của câu, thường bắt đầu bằng động từ và cho biết hành động hoặc trạng thái của chủ ngữ.\n\nVí dụ:\nThe boy plays football.\nShe is happy."
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="3. Tân ngữ (Object)\n\nLà người hoặc vật chịu tác động của hành động.\n- Tân ngữ trực tiếp: He eats an apple.\n- Tân ngữ gián tiếp: He gave me a gift."
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="4. Bổ ngữ (Complement)\n\nDùng để bổ nghĩa cho chủ ngữ hoặc tân ngữ.\nVí dụ:\nShe is a doctor.\nThe weather became cold."
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="5. Trạng ngữ (Adverbial)\n\nCung cấp thêm thông tin về thời gian, nơi chốn, cách thức, mức độ.\nVí dụ:\nShe sings beautifully.\nHe goes to school every day."
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <!-- III. Các loại câu -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="8dp"
+                android:text="III. Các loại câu trong tiếng Anh"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="1. Câu đơn: I like apples.\n2. Câu ghép: I wanted to go out, but it was raining.\n3. Câu phức: I stayed home because it was raining.\n4. Câu ghép–phức: I was cooking when he called, and my brother was setting the table."
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <!-- IV. Dạng câu -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="8dp"
+                android:text="IV. Cấu trúc các dạng câu cơ bản"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="• Khẳng định: S + V (+ O/C/A)\n• Phủ định: S + do/does/did + not + V\n• Nghi vấn: Do/Does/Did + S + V?\n• Mệnh lệnh: (You) + V\n• Cảm thán: What/How + adj + S + V!"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <!-- V. Thứ tự từ -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="V. Thứ tự các thành phần trong câu\n\nCấu trúc cơ bản: S + V + O + C + A\nVí dụ: She gave me a gift yesterday.\nThứ tự trạng ngữ: Manner → Place → Time\nVí dụ: She sings beautifully in the hall every Sunday."
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <!-- VI. Cấu trúc phổ biến -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="16dp"
+                android:text="VI. Các kiểu cấu trúc câu phổ biến\n\n• S + be + adj → She is beautiful.\n• S + V + O → He reads books.\n• S + V + O + O → She gave me a present.\n• S + V + O + C → They made him captain.\n• There is/are + N → There are many students in the class.\n• It is + adj + to V → It is easy to learn English.\n• S + be + V-ing/V3 → The car is being repaired.\n• S + have/has + V3 → I have finished my homework."
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

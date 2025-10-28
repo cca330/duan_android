@@ -33,15 +33,36 @@ android {
 
 dependencies {
 
-
-    implementation(libs.appcompat)
     implementation(libs.material)
+    implementation(libs.appcompat)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
 
+    // Thêm
+    // MVVM
+    implementation(libs.lifecycle.viewmodel)
+    implementation(libs.lifecycle.livedata)
+
+    // Room
+
+
+
+    // Hilt
+    implementation(libs.hilt.android)
+    annotationProcessor(libs.hilt.compiler)
+
+    // WorkManager
+    implementation(libs.work.runtime)
+
+    // Picasso
+    implementation(libs.picasso)
+
+
+
+    implementation("com.squareup.okhttp3:logging-interceptor:4.12.0")
 
     implementation("com.squareup.okhttp3:okhttp:4.12.0")
     implementation(libs.jtds)

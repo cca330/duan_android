@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/top_app"
+        android:layout_width="412dp"
+        android:layout_height="56dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-1dp"
+        android:background="@drawable/tab"
+        android:padding="6dp" />
+
+    <RelativeLayout
+        android:id="@+id/cards"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        android:padding="16sp">
+
+        <RelativeLayout
+            android:id="@+id/card_main"
+            android:layout_width="380dp"
+            android:layout_height="158dp"
+            android:background="@drawable/card_main"
+            android:clipToOutline="true"
+            android:elevation="24dp">
+
+            <RelativeLayout
+                android:id="@+id/frame_1"
+                android:layout_width="380dp"
+                android:layout_height="64dp"
+                android:background="#FFDFBD"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/writingicon"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:contentDescription="writing"
+                    android:background="@drawable/writingicon"
+                    android:clipToOutline="true"/>
+
+                <TextView
+                    android:id="@+id/writing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/writingicon"
+                    android:lineSpacingExtra="5sp"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/writing"
+                    android:textAppearance="@style/blood_sugar" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/frame_2"
+                android:layout_width="380dp"
+                android:layout_height="104dp"
+                android:layout_below="@+id/frame_1"
+                android:background="@drawable/write"
+                android:padding="16sp">
+
+                <Button
+                    android:id="@+id/btn_writing"
+                    android:layout_width="129dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/button"
+                    android:clipToOutline="true"
+                    android:text="Learn"
+                    android:textSize="20dp">
+
+                </Button>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/card_main_2"
+            android:layout_width="380dp"
+            android:layout_height="158dp"
+            android:layout_marginTop="174dp"
+            android:background="@drawable/card_main"
+            android:clipToOutline="true"
+            android:elevation="24dp">
+
+            <RelativeLayout
+                android:id="@+id/frame_3"
+                android:layout_width="380dp"
+                android:layout_height="64dp"
+                android:background="#FAC9CD"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/lis"
+                    android:layout_width="42dp"
+                    android:layout_height="45dp"
+                    android:contentDescription="listening"
+                    android:background="@drawable/listenicon"
+                    android:clipToOutline="true" />
+
+                <TextView
+                    android:id="@+id/listening"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/lis"
+                    android:lineSpacingExtra="5sp"
+                    android:text="@string/listening"
+                    android:textAppearance="@style/blood_sugar" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/frame_4"
+                android:layout_width="380dp"
+                android:layout_height="104dp"
+                android:layout_below="@+id/frame_3"
+                android:background="@drawable/listen"
+                android:padding="16dp"
+                >
+
+                <TextView
+                    android:id="@+id/lis_img"
+                    android:layout_width="80dp"
+                    android:layout_height="70dp"
+                    android:text="Image"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:padding="17dp"
+                    android:textSize="13dp"
+                    android:background="@drawable/duongvien"
+                    android:layout_marginStart="15dp"/>
+                <TextView
+                    android:id="@+id/lis_ques_res"
+                    android:layout_width="80dp"
+                    android:layout_height="70dp"
+                    android:text="Ques-Res"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:paddingTop="20dp"
+                    android:textSize="13dp"
+                    android:background="@drawable/duongvien"
+                    android:layout_marginStart="130dp"/>
+                <TextView
+                    android:id="@+id/lis_conversation"
+                    android:layout_width="80dp"
+                    android:layout_height="70dp"
+                    android:text="Conversation"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+
+                    android:paddingTop="20dp"
+                    android:textSize="13dp"
+                    android:background="@drawable/duongvien"
+                    android:layout_marginStart="240dp"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/card_main_3"
+            android:layout_width="380dp"
+            android:layout_height="316dp"
+            android:layout_marginTop="360dp"
+            android:background="@drawable/card_main"
+            android:clipToOutline="true"
+            android:elevation="24dp">
+
+
+            <RelativeLayout
+                android:id="@+id/frame_5"
+                android:layout_width="380dp"
+                android:layout_height="64dp"
+                android:background="#DCF8E4"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/spe"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:contentDescription="speaking"
+                    android:background="@drawable/speakicon"
+                    android:clipToOutline="true" />
+
+                <TextView
+                    android:id="@+id/speaking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/spe"
+                    android:lineSpacingExtra="5sp"
+                    android:text="@string/speaking"
+                    android:layout_marginLeft="20dp"
+                    android:textAppearance="@style/blood_sugar" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/frame_6"
+                android:layout_width="380dp"
+                android:layout_height="208dp"
+                android:layout_below="@+id/frame_5"
+                android:background="@drawable/speak"
+                android:padding="16dp">
+
+
+                <TextView
+                    android:id="@+id/noi_part1"
+                    android:layout_width="80dp"
+                    android:layout_height="70dp"
+                    android:text="Part 1"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:padding="20dp"
+                    android:textSize="13dp"
+                    android:background="@drawable/duongvien"
+                    android:layout_marginStart="15dp"/>
+
+
+                <TextView
+                    android:id="@+id/noi_part2"
+                    android:layout_width="80dp"
+                    android:layout_height="70dp"
+                    android:text="Part 2"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:padding="20dp"
+                    android:textSize="13dp"
+                    android:background="@drawable/duongvien"
+                    android:layout_marginStart="130dp"
+                />
+
+
+                <TextView
+                    android:id="@+id/noi_part3"
+                    android:layout_width="80dp"
+                    android:layout_height="70dp"
+                    android:text="Part 3"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:padding="20dp"
+                    android:textSize="13dp"
+                    android:background="@drawable/duongvien"
+                    android:layout_marginStart="240dp"/>
+
+
+
+                <TextView
+                    android:id="@+id/noi_part4"
+                    android:layout_width="80dp"
+                    android:layout_height="70dp"
+                    android:text="Part 4"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:padding="20dp"
+                    android:textSize="13dp"
+                    android:background="@drawable/duongvien"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="85dp"/>
+
+                <TextView
+                    android:id="@+id/noi_part5"
+                    android:layout_width="80dp"
+                    android:layout_height="70dp"
+                    android:text="Part 5"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:padding="20dp"
+                    android:textSize="13dp"
+                    android:background="@drawable/duongvien"
+                    android:layout_marginStart="130dp"
+                    android:layout_marginTop="85dp"
+                    />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/card_main_4"
+            android:layout_width="380dp"
+            android:layout_height="158dp"
+            android:layout_marginTop="698dp"
+            android:background="@drawable/card_main"
+            android:clipToOutline="true"
+            android:elevation="24dp">
+
+            <RelativeLayout
+                android:id="@+id/frame_7"
+                android:layout_width="380dp"
+                android:layout_height="64dp"
+                android:background="#D4D5FF"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/read"
+                    android:layout_width="40dp"
+                    android:contentDescription="reading"
+                    android:layout_height="40dp"
+                    android:background="@drawable/readicon"
+                    android:clipToOutline="true" />
+
+                <TextView
+                    android:id="@+id/reading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/read"
+                    android:lineSpacingExtra="5sp"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/reading"
+                    android:textAppearance="@style/blood_sugar" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/frame_8"
+                android:layout_width="380dp"
+                android:layout_height="104dp"
+                android:layout_below="@+id/frame_7"
+                android:background="@drawable/read"
+                android:padding="16dp">
+
+                <Button
+                    android:id="@+id/btn_read"
+                    android:layout_width="129dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/button"
+                    android:clipToOutline="true"
+                    android:text="Learn"
+                    android:textSize="20dp">
+
+                </Button>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="406dp"
+        android:layout_height="82dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="-1dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/tab_home_ha"
+        android:elevation="20dp"
+        app:menu="@menu/bottom_nav" />
+</RelativeLayout>
+
+
+

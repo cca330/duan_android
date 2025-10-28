@@ -1,0 +1,29 @@
+package com.example.duanlonmain.database.noi_part3;
+
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
+@Entity
+public class noi_part3 {
+    @PrimaryKey(autoGenerate = true)
+    public int id;
+
+    @ColumnInfo
+    public String context;
+    @ColumnInfo
+    public String q1;
+    @ColumnInfo
+    public String q2;
+    @ColumnInfo
+    public String q3;
+    @ColumnInfo
+    public int score;
+
+    public noi_part3(String context, String q1, String q2, String q3) {
+        this.context = context;
+        this.q1 = q1;
+        this.q2 = q2;
+        this.q3 = q3;
+    }
+}

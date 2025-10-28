@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vocabulary.Flashcard.FlashcardActivity">
+
+    <!--
+        Đây là nơi Fragment sẽ được hiển thị.
+        android:name trỏ đến FlashcardFragment của bạn.
+        Hãy chắc chắn đường dẫn là chính xác.
+    -->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/flashcard_fragment_container"
+        android:name="com.example.hctinganh.vocabulary.Flashcard.FlashCardFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</FrameLayout>
