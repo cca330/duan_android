@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <style name="blood_sugar">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Language">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">#0A0C11</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="Grammar">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">#0A0C11</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="text">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="home">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#8C929C</item>
+    </style>
+
+
+    <style name="title">
+        <item name="android:textSize">26sp</item>
+        <item name="android:textColor">#0A0C11</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
+
+</resources>

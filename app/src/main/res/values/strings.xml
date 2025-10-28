@@ -3,4 +3,34 @@
     <string name="underline_cauhoi"><u>Câu hỏi</u></string>
     <string name="cauhoi_en">In this part of the test, you will read the text on the screen. You have 45 seconds to prepare. Then you will have 45 seconds to read the text aloud.</string>
     <string name="cauhoi_vi">Trong phần này của bài kiểm tra, bạn sẽ đọc đoạn văn trên màn hình. Bạn sẽ có 45 giây để chuẩn bị. Sau đó, bạn sẽ có 45 giây để đọc to đoạn văn bản.</string>
+    <string name="writing">
+                Writing
+            </string>
+    <string name="listening">
+                Listening
+            </string>
+    <string name="reading">
+                Reading
+            </string>
+    <string name="speaking">
+                Speaking
+            </string>
+    <string name="chat">
+                Chat Ai
+            </string>
+    <string name="grammar">
+                Grammar
+            </string>
+    <string name="home">
+                Home
+            </string>
+    <string name="information">
+                 Extend
+            </string>
+    <string name="vocab">
+                Vocab
+            </string>
+    <string name="settings">
+                Setting
+            </string>
 </resources>

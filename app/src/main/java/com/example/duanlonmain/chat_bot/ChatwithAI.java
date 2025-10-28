@@ -42,7 +42,7 @@ public class ChatwithAI extends AppCompatActivity {
     private AppDatabase db;
     private MessageDao messageDao;
 
-    ExecutorService executor = Executors.newSingleThreadExecutor();
+    ExecutorService executor = Executors.newSingleThreadExecutor();//chỉ dùng 1 luồng duy nhất để xử lý lần lượt các request gửi lên AI
 
     // AI model
     GenerativeModel generativeModelInstance = new GenerativeModel(

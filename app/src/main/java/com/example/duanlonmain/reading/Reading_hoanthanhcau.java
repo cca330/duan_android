@@ -137,12 +137,6 @@ public class Reading_hoanthanhcau extends AppCompatActivity {
 
 
 
-
-
-
-
-
-
         LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
         recyclerQuestions.setLayoutManager(layoutManager);
         adapter = new ReadingAdapter(this, questions);

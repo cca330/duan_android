@@ -17,7 +17,7 @@ public class Adapter_walkthrough extends FragmentStatePagerAdapter {
 
     public Adapter_walkthrough(@NonNull FragmentManager fm) {
         super(fm, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
-        // BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENTtối ưu hơn, chỉ fragment đang xem mới thật sự "sống".
+        // BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT tối ưu hơn, chỉ fragment đang xem mới thật sự sống
     }
 
     @NonNull
